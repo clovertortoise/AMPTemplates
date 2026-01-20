@@ -1,0 +1,19 @@
+[
+    {
+        "UpdateStageName": "Create Server Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Download Pumpkin (Auto-Arch)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"ARCH=$(uname -m); if [[ $ARCH == 'aarch64' ]]; then URL='https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux'; else URL='https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux'; fi; echo Downloading $URL...; wget -q -O PumpkinServer $URL && chmod +x PumpkinServer\"",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": false
+    }
+]
