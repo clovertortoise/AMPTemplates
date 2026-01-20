@@ -6,7 +6,7 @@
         "Keywords": "ip port java address",
         "FieldName": "java_edition_address",
         "InputType": "text",
-        "DefaultValue": "0.0.0.0:{{$ApplicationPort1}}",
+        "DefaultValue": "0.0.0.0:25565",
         "IncludeInCommandLine": false
     },
     {
@@ -16,7 +16,7 @@
         "Keywords": "ip port bedrock address",
         "FieldName": "bedrock_edition_address",
         "InputType": "text",
-        "DefaultValue": "0.0.0.0:{{$ApplicationPort2}}",
+        "DefaultValue": "0.0.0.0:19132",
         "IncludeInCommandLine": false
     },
     {
