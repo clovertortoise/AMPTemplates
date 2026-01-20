@@ -1,40 +1,32 @@
-# --- Metadata Section (Required for AMP UI) ---
-GenericModule.Meta.AppConfigId=PumpkinMC
-GenericModule.Meta.DisplayName=PumpkinMC
-GenericModule.Meta.Description=A high-performance Minecraft server implementation built in Rust.
-GenericModule.Meta.DisplayImageSource=https://raw.githubusercontent.com/Pumpkin-MC/Pumpkin/master/assets/logo.png
-GenericModule.Meta.OS=Linux,Windows
-GenericModule.Meta.Categories=Game Servers
+Meta.DisplayName=PumpkinMC
+Meta.Description=PumpkinMC is a Rust-based Minecraft server.
+Meta.OS=Linux, Windows
+Meta.AarchSupport=True
+Meta.Arch=x86_64
+Meta.Author=Jules
+Meta.URL=https://pumpkinmc.org/
+Meta.EndpointURIFormat={ip}:{GenericModule.App.Ports.$ClientPort}
+Meta.ConfigManifest=pumpkinmcconfig.json
+Meta.MetaConfigManifest=pumpkinmcmetaconfig.json
+Meta.ConfigRoot=pumpkinmc.kvp
+Meta.MinAMPVersion=2.6.0.0
+Meta.SpecificDockerImage=cubecoders/ampbase:debian
+Meta.DockerRequired=False
+Meta.DockerBaseReadOnly=False
+Meta.ContainerPolicy=Supported
 
-# --- Application Identity ---
-App.Name=PumpkinMC
-App.ConsoleName=Pumpkin Console
-App.Codename=pumpkinmc
-App.Description=A high-performance Minecraft server implementation built in Rust.
-App.Category=Game Servers
-
-# --- Execution Logic ---
-App.ExecutableLinux=./pumpkin
+App.DisplayName=PumpkinMC
+App.RootDir=pumpkin
+App.WorkingDir=
+App.ExecutableLinux=pumpkin
 App.ExecutableWindows=pumpkin.exe
-App.WorkingDirectoryLinux=./
-App.WorkingDirectoryWindows=./
+App.WaitForOneShot=False
+App.OutputRegex=^Server is now running
+App.ApplicationReadyOutput=^Server is now running
 
-# Linux Permission Fix
-App.PrependCmdLineLinux=chmod +x pumpkin;
+App.Ports.25565.Name=Java Edition Port
+App.Ports.25565.PortType=TCP
+App.Ports.19132.Name=Bedrock Edition Port
+App.Ports.19132.PortType=UDP
 
-# Command Line Arguments (Empty because we use TOML files)
-App.CommandLine=
-App.StopCommand=stop
-App.OutputEncoding=UTF-8
-
-# --- Update Engine ---
-UpdateSource.UpdateSourceType=WebDownload
-# Note: This URL targets Linux x86_64.
-UpdateSource.UpdateSourceURL=https://github.com/Pumpkin-MC/Pumpkin/releases/latest/download/pumpkin-linux-x86_64
-UpdateSource.TargetFilename=pumpkin
-UpdateSource.ExecutablePermission=True
-
-# --- Console Monitoring ---
-Console.ApplicationReadyRegex=(?i)Listening on
-Console.UserJoinRegex=(?i)Player (?<user>.*) joined the game
-Console.UserLeaveRegex=(?i)Player (?<user>.*) left the game
+App.UpdateSources=[{"UpdateStageName":"Download Pumpkin (Linux x64)","UpdateSourcePlatform":"Linux","UpdateSourceArchitecture":"x86_64","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux","UpdateSourceArgs":"pumpkin","UpdateSourceTarget":"{{$FullInstanceDir}}pumpkin","OverwriteExistingFiles":true,"SetExecutable":true},{"UpdateStageName":"Download Pumpkin (Linux ARM64)","UpdateSourcePlatform":"Linux","UpdateSourceArchitecture":"aarch64","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux","UpdateSourceArgs":"pumpkin","UpdateSourceTarget":"{{$FullInstanceDir}}pumpkin","OverwriteExistingFiles":true,"SetExecutable":true},{"UpdateStageName":"Download Pumpkin (Windows)","UpdateSourcePlatform":"Windows","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Windows.exe","UpdateSourceArgs":"pumpkin.exe","UpdateSourceTarget":"{{$FullInstanceDir}}pumpkin","OverwriteExistingFiles":true},{"UpdateStageName":"Set Executable Flag (Linux)","UpdateSourcePlatform":"Linux","UpdateSource":"SetExecutableFlag","UpdateSourceArgs":"{{$FullInstanceDir}}pumpkin/pumpkin"},{"UpdateStageName":"Generate Config Files","UpdateSourcePlatform":"All","UpdateSource":"StartApplication","UpdateSourceConditionSetting":"FirstStart","UpdateSourceConditionValue":"True"},{"UpdateStageName":"Wait For Startup","UpdateSourcePlatform":"All","UpdateSource":"WaitForStartupComplete","UpdateSourceConditionSetting":"FirstStart","UpdateSourceConditionValue":"True"},{"UpdateStageName":"Stop Server","UpdateSourcePlatform":"All","UpdateSource":"ShutdownApplication","UpdateSourceConditionSetting":"FirstStart","UpdateSourceConditionValue":"True"}]

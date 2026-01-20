@@ -1,52 +1,198 @@
 [
-  {
-    "DisplayName": "Server Port",
-    "Category": "Network",
-    "Description": "The TCP port the server listens on.",
-    "FieldName": "ServerPort",
-    "InputType": "number",
-    "ParamFieldName": "port",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "25565"
-  },
-  {
-    "DisplayName": "Max Players",
-    "Category": "Gameplay",
-    "Description": "Maximum number of concurrent players allowed.",
-    "FieldName": "MaxPlayers",
-    "InputType": "number",
-    "ParamFieldName": "max_players",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "20"
-  },
-  {
-    "DisplayName": "View Distance",
-    "Category": "Gameplay",
-    "Description": "The radius of chunks sent to the client.",
-    "FieldName": "ViewDistance",
-    "InputType": "number",
-    "ParamFieldName": "view_distance",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "10"
-  },
-  {
-    "DisplayName": "Online Mode",
-    "Category": "Security",
-    "Description": "Authenticate players with Mojang servers. Set to False for offline/LAN.",
-    "FieldName": "OnlineMode",
-    "InputType": "checkbox",
-    "ParamFieldName": "online_mode",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "true"
-  },
-  {
-    "DisplayName": "Message of the Day (MOTD)",
-    "Category": "General",
-    "Description": "The text displayed in the server list.",
-    "FieldName": "Motd",
-    "InputType": "text",
-    "ParamFieldName": "motd",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "A PumpkinMC Server"
-  }
+    {
+        "Name": "FirstStart",
+        "Type": "Boolean",
+        "DefaultValue": "True",
+        "Hidden": true
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "Server Settings",
+        "Description": "The maximum number of players allowed on the server.",
+        "Keywords": "max,players,slots",
+        "FieldName": "max_players",
+        "InputType": "number",
+        "DefaultValue": "20",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Java Edition Address",
+        "Category": "Network",
+        "Description": "The address and port for Java Edition (e.g. \"0.0.0.0:25565\"). Ensure quotes are used.",
+        "Keywords": "port,java,address",
+        "FieldName": "java_edition_address",
+        "InputType": "text",
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort1}}\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Bedrock Edition Address",
+        "Category": "Network",
+        "Description": "The address and port for Bedrock Edition (e.g. \"0.0.0.0:19132\"). Ensure quotes are used.",
+        "Keywords": "port,bedrock,address",
+        "FieldName": "bedrock_edition_address",
+        "InputType": "text",
+        "DefaultValue": "\"0.0.0.0:19132\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "MOTD",
+        "Category": "Server Settings",
+        "Description": "Message of the Day. Ensure quotes are used.",
+        "Keywords": "motd,message",
+        "FieldName": "motd",
+        "InputType": "text",
+        "DefaultValue": "\"A Pumpkin Server\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Online Mode",
+        "Category": "Security",
+        "Description": "Whether to verify player accounts with Mojang.",
+        "Keywords": "online,mode,auth",
+        "FieldName": "online_mode",
+        "InputType": "Checkbox",
+        "DefaultValue": "true",
+        "EnumValues": { "False": "false", "True": "true" }
+    },
+    {
+        "DisplayName": "Allow Nether",
+        "Category": "Gameplay",
+        "Description": "Allow players to travel to the Nether.",
+        "Keywords": "nether,allow",
+        "FieldName": "allow_nether",
+        "InputType": "Checkbox",
+        "DefaultValue": "true",
+        "EnumValues": { "False": "false", "True": "true" }
+    },
+    {
+        "DisplayName": "View Distance",
+        "Category": "Server Settings",
+        "Description": "View distance in chunks.",
+        "Keywords": "view,distance",
+        "FieldName": "view_distance",
+        "InputType": "number",
+        "DefaultValue": "10",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Simulation Distance",
+        "Category": "Server Settings",
+        "Description": "Simulation distance in chunks.",
+        "Keywords": "simulation,distance",
+        "FieldName": "simulation_distance",
+        "InputType": "number",
+        "DefaultValue": "10",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Seed",
+        "Category": "World",
+        "Description": "World seed. Ensure quotes are used.",
+        "Keywords": "seed,world",
+        "FieldName": "seed",
+        "InputType": "text",
+        "DefaultValue": "\"\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Default Gamemode",
+        "Category": "Gameplay",
+        "Description": "Default gamemode for new players.",
+        "Keywords": "gamemode,default",
+        "FieldName": "default_gamemode",
+        "InputType": "Enum",
+        "DefaultValue": "\"Survival\"",
+        "EnumValues": {
+            "\"Survival\"": "Survival",
+            "\"Creative\"": "Creative",
+            "\"Adventure\"": "Adventure",
+            "\"Spectator\"": "Spectator"
+        }
+    },
+    {
+        "DisplayName": "Default Difficulty",
+        "Category": "Gameplay",
+        "Description": "Default difficulty.",
+        "Keywords": "difficulty",
+        "FieldName": "default_difficulty",
+        "InputType": "Enum",
+        "DefaultValue": "\"Normal\"",
+        "EnumValues": {
+            "\"Peaceful\"": "Peaceful",
+            "\"Easy\"": "Easy",
+            "\"Normal\"": "Normal",
+            "\"Hard\"": "Hard"
+        }
+    },
+    {
+        "DisplayName": "Enable Logging",
+        "Category": "Logging",
+        "Description": "Enable server logging.",
+        "Keywords": "logging,enable",
+        "FieldName": "logging_enabled",
+        "InputType": "Checkbox",
+        "DefaultValue": "true",
+        "EnumValues": { "False": "false", "True": "true" }
+    },
+    {
+        "DisplayName": "Log File",
+        "Category": "Logging",
+        "Description": "Log file name. Ensure quotes are used.",
+        "Keywords": "log,file",
+        "FieldName": "logging_file",
+        "InputType": "text",
+        "DefaultValue": "\"latest.log\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Query",
+        "Category": "Network",
+        "Description": "Enable GameSpy4 Query protocol.",
+        "Keywords": "query,enable",
+        "FieldName": "query_enabled",
+        "InputType": "Checkbox",
+        "DefaultValue": "true",
+        "EnumValues": { "False": "false", "True": "true" }
+    },
+    {
+        "DisplayName": "Enable RCON",
+        "Category": "RCON",
+        "Description": "Enable RCON.",
+        "Keywords": "rcon,enable",
+        "FieldName": "rcon_enabled",
+        "InputType": "Checkbox",
+        "DefaultValue": "false",
+        "EnumValues": { "False": "false", "True": "true" }
+    },
+    {
+        "DisplayName": "RCON Address",
+        "Category": "RCON",
+        "Description": "Address for RCON (e.g. \"0.0.0.0:25575\"). Ensure quotes are used.",
+        "Keywords": "rcon,address",
+        "FieldName": "rcon_address",
+        "InputType": "text",
+        "DefaultValue": "\"0.0.0.0:25575\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "RCON Password",
+        "Category": "RCON",
+        "Description": "Password for RCON. Ensure quotes are used.",
+        "Keywords": "rcon,password",
+        "FieldName": "rcon_password",
+        "InputType": "password",
+        "DefaultValue": "\"\"",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable PVP",
+        "Category": "Gameplay",
+        "Description": "Enable Player vs Player combat.",
+        "Keywords": "pvp,enable",
+        "FieldName": "pvp_enabled",
+        "InputType": "Checkbox",
+        "DefaultValue": "true",
+        "EnumValues": { "False": "false", "True": "true" }
+    }
 ]

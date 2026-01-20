@@ -1,23 +1,32 @@
 [
-  {
-    "ConfigFile": "configuration.toml",
-    "ConfigType": "Regex",
-    "SetupAction": "ReadWrite",
-    "Description": "Matches numeric values (Port, Max Players)",
-    "ConfigFormatRegex": "(?m)^\\s*{0}\\s*=\\s*(?<value>[0-9]+)$"
-  },
-  {
-    "ConfigFile": "configuration.toml",
-    "ConfigType": "Regex",
-    "SetupAction": "ReadWrite",
-    "Description": "Matches boolean values (Online Mode)",
-    "ConfigFormatRegex": "(?m)^\\s*{0}\\s*=\\s*(?<value>true|false)$"
-  },
-  {
-    "ConfigFile": "configuration.toml",
-    "ConfigType": "Regex",
-    "SetupAction": "ReadWrite",
-    "Description": "Matches quoted strings (MOTD)",
-    "ConfigFormatRegex": "(?m)^\\s*{0}\\s*=\\s*\"(?<value>[^\"]*)\""
-  }
+    {
+        "ConfigFile": "pumpkin/config/configuration.toml",
+        "ConfigType": "ini",
+        "KnownSettings": [
+            { "Name": "max_players", "Section": "", "Key": "max_players" },
+            { "Name": "java_edition_address", "Section": "", "Key": "java_edition_address" },
+            { "Name": "bedrock_edition_address", "Section": "", "Key": "bedrock_edition_address" },
+            { "Name": "motd", "Section": "", "Key": "motd" },
+            { "Name": "online_mode", "Section": "", "Key": "online_mode" },
+            { "Name": "allow_nether", "Section": "", "Key": "allow_nether" },
+            { "Name": "view_distance", "Section": "", "Key": "view_distance" },
+            { "Name": "simulation_distance", "Section": "", "Key": "simulation_distance" },
+            { "Name": "seed", "Section": "", "Key": "seed" },
+            { "Name": "default_gamemode", "Section": "", "Key": "default_gamemode" },
+            { "Name": "default_difficulty", "Section": "", "Key": "default_difficulty" }
+        ]
+    },
+    {
+        "ConfigFile": "pumpkin/config/features.toml",
+        "ConfigType": "ini",
+        "KnownSettings": [
+            { "Name": "logging_enabled", "Section": "logging", "Key": "enabled" },
+            { "Name": "logging_file", "Section": "logging", "Key": "file" },
+            { "Name": "query_enabled", "Section": "networking.query", "Key": "enabled" },
+            { "Name": "rcon_enabled", "Section": "networking.rcon", "Key": "enabled" },
+            { "Name": "rcon_address", "Section": "networking.rcon", "Key": "address" },
+            { "Name": "rcon_password", "Section": "networking.rcon", "Key": "password" },
+            { "Name": "pvp_enabled", "Section": "pvp", "Key": "enabled" }
+        ]
+    }
 ]
