@@ -2,21 +2,21 @@
     {
         "Protocol": "TCP",
         "Port": 25565,
-        "Ref": "ServerPort",
+        "Ref": "ApplicationPort1",
         "Name": "Java Server Port",
         "Description": "The main port for Java Edition connections."
     },
     {
         "Protocol": "UDP",
         "Port": 19132,
-        "Ref": "BedrockPort",
+        "Ref": "ApplicationPort2",
         "Name": "Bedrock Server Port",
         "Description": "The port for Bedrock Edition connections."
     },
     {
         "Protocol": "TCP",
         "Port": 25575,
-        "Ref": "RCONPort",
+        "Ref": "RemoteAdminPort",
         "Name": "RCON Port",
         "Description": "Remote Console port (Required for AMP management)."
     }
