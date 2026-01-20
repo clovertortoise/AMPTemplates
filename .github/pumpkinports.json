@@ -1,16 +1,16 @@
 [
     {
-        "PortDisplayName": "Java Port",
-        "PortName": "ApplicationPort1",
         "Protocol": "TCP",
-        "DefaultPort": 25565,
-        "AllowChange": true
+        "Port": 25565,
+        "Ref": "ApplicationPort1",
+        "Name": "Java Port",
+        "Description": "Port for Java Edition clients"
     },
     {
-        "PortDisplayName": "Bedrock Port",
-        "PortName": "ApplicationPort2",
         "Protocol": "UDP",
-        "DefaultPort": 19132,
-        "AllowChange": true
+        "Port": 19132,
+        "Ref": "ApplicationPort2",
+        "Name": "Bedrock Port",
+        "Description": "Port for Bedrock Edition clients"
     }
 ]
