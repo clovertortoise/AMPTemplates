@@ -31,6 +31,7 @@ Console.UserLeaveRegex=^.*(?<username>.+?) left the game
 Console.UserChatRegex=^<(?<username>.+?)> (?<message>.+)
 
 Meta.DisplayName=PumpkinMC
+Meta.Description=Pumpkin is a Minecraft server built entirely in Rust, offering a fast, efficient, and customizable experience.
 Meta.OS=3
 Meta.AppConfigId=pumpkinmc
 Meta.Author=PumpkinMC
