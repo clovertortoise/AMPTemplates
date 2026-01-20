@@ -1,0 +1,16 @@
+[
+    {
+        "PortDisplayName": "Java Port",
+        "PortName": "ApplicationPort1",
+        "Protocol": "TCP",
+        "DefaultPort": 25565,
+        "AllowChange": true
+    },
+    {
+        "PortDisplayName": "Bedrock Port",
+        "PortName": "ApplicationPort2",
+        "Protocol": "UDP",
+        "DefaultPort": 19132,
+        "AllowChange": true
+    }
+]
