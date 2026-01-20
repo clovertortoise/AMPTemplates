@@ -1,16 +1,25 @@
+# --- Metadata Section (Required for AMP UI) ---
+GenericModule.Meta.AppConfigId=PumpkinMC
+GenericModule.Meta.DisplayName=PumpkinMC
+GenericModule.Meta.Description=A high-performance Minecraft server implementation built in Rust.
+GenericModule.Meta.DisplayImageSource=https://raw.githubusercontent.com/Pumpkin-MC/Pumpkin/master/assets/logo.png
+GenericModule.Meta.OS=Linux,Windows
+GenericModule.Meta.Categories=Game Servers
+
+# --- Application Identity ---
 App.Name=PumpkinMC
 App.ConsoleName=Pumpkin Console
 App.Codename=pumpkinmc
 App.Description=A high-performance Minecraft server implementation built in Rust.
 App.Category=Game Servers
 
-# Execution Logic
+# --- Execution Logic ---
 App.ExecutableLinux=./pumpkin
 App.ExecutableWindows=pumpkin.exe
 App.WorkingDirectoryLinux=./
 App.WorkingDirectoryWindows=./
 
-# Linux Permission Fix: Ensures the downloaded binary is executable
+# Linux Permission Fix
 App.PrependCmdLineLinux=chmod +x pumpkin;
 
 # Command Line Arguments (Empty because we use TOML files)
@@ -18,14 +27,14 @@ App.CommandLine=
 App.StopCommand=stop
 App.OutputEncoding=UTF-8
 
-# Update Engine (Direct Binary Download)
+# --- Update Engine ---
 UpdateSource.UpdateSourceType=WebDownload
-# Note: Defaults to Linux x86_64. Modify if hosting on ARM or Windows.
+# Note: This URL targets Linux x86_64.
 UpdateSource.UpdateSourceURL=https://github.com/Pumpkin-MC/Pumpkin/releases/latest/download/pumpkin-linux-x86_64
 UpdateSource.TargetFilename=pumpkin
 UpdateSource.ExecutablePermission=True
 
-# Console Monitoring & Sleep Mode Triggers
+# --- Console Monitoring ---
 Console.ApplicationReadyRegex=(?i)Listening on
 Console.UserJoinRegex=(?i)Player (?<user>.*) joined the game
 Console.UserLeaveRegex=(?i)Player (?<user>.*) left the game
