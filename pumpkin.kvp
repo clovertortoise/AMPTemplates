@@ -1,0 +1,41 @@
+Meta.DisplayName=PumpkinMC
+Meta.Description=A high-performance, self-contained Minecraft server implementation.
+Meta.OS=Linux
+Meta.Arch=x86_64,aarch64
+Meta.Author=Community
+Meta.URL=https://github.com/Pumpkin-MC/Pumpkin
+Meta.ConfigManifest=pumpkinconfig.json
+Meta.MetaConfigManifest=pumpkinmetaconfig.json
+Meta.ConfigRoot=pumpkin.kvp
+Meta.Version=1.7
+Meta.AppConfigId=PumpkinMC
+Meta.AppIsMultiIPAware=True
+Meta.Prerequisites=[]
+Meta.DisplayImageSource=Generic:Application
+Meta.EndpointURIFormat={ip}:{GenericModule.App.Ports.$ServerPort}
+
+App.DisplayName=PumpkinMC
+App.BaseDirectory=./pumpkin/
+App.ExecutableLinux=pumpkin/PumpkinServer
+App.CommandLineArgs=
+App.WorkingDir=pumpkin
+App.ExitMethod=String
+App.ExitString=stop
+App.ExitTimeout=15
+App.HasWriteableConsole=True
+App.HasReadableConsole=True
+App.Ports=@IncludeJson[pumpkinports.json]
+App.UpdateSources=@IncludeJson[pumpkinupdates.json]
+
+# RCON Configuration for AMP Console Support
+App.AdminMethod=SourceRCON
+App.RemoteAdminPassword=
+App.RCONConnectDelaySeconds=5
+App.RCONConnectRetrySeconds=5
+App.AdminPortRef=RCONPort
+App.UseRandomAdminPassword=True
+
+# Console Regex
+Console.UserJoinRegex=^.+? (?<username>.+?) joined the game$
+Console.UserLeaveRegex=^.+? (?<username>.+?) left the game$
+Console.AppReadyRegex=Done \(.+?s\)! For help, type "help"
