@@ -20,6 +20,36 @@
         "IncludeInCommandLine": false
     },
     {
+        "DisplayName": "Java Server Port",
+        "Category": "Network",
+        "Description": "Port for Java Edition connections",
+        "Keywords": "port java",
+        "FieldName": "ServerPort",
+        "InputType": "number",
+        "DefaultValue": 25565,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Bedrock Server Port",
+        "Category": "Network",
+        "Description": "Port for Bedrock Edition connections",
+        "Keywords": "port bedrock",
+        "FieldName": "BedrockPort",
+        "InputType": "number",
+        "DefaultValue": 19132,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "RCON Port",
+        "Category": "Network",
+        "Description": "Port for RCON connections",
+        "Keywords": "port rcon",
+        "FieldName": "RCONPort",
+        "InputType": "number",
+        "DefaultValue": 25575,
+        "IncludeInCommandLine": false
+    },
+    {
         "DisplayName": "Enable Java Edition",
         "Category": "Network",
         "Description": "Enable support for Java Edition clients",
