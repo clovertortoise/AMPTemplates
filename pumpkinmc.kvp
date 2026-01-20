@@ -2,9 +2,11 @@ Description=Pumpkin is a Minecraft server built entirely in Rust, offering a fas
 StartOnBoot=True
 App.DisplayName=PumpkinMC
 App.Link=https://pumpkinmc.org/
-App.ExecutableWin=pumpkin/pumpkin.exe
-App.ExecutableLinux=pumpkin/pumpkin
-App.WorkingDirectory=pumpkin
+App.RootDir=./pumpkin/
+App.BaseDirectory=./pumpkin/
+App.ExecutableWin=pumpkin.exe
+App.ExecutableLinux=pumpkin
+App.WorkingDir=
 App.CommandLineArgs=
 App.ExitMethod=String
 App.ExitString=stop
@@ -15,26 +17,28 @@ App.ApplicationPort1=25565
 App.ApplicationPort2=25575
 App.ApplicationPort3=19132
 App.AppSettings={}
-App.UpdateSources=[ \
-    { "UpdateStageName": "Download Windows x64", "UpdateSourcePlatform": "Windows", "UpdateSource": "FetchURL", "UpdateSourceData": "https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Windows.exe", "UpdateSourceTarget": "pumpkin/pumpkin.exe", "OverwriteExistingFiles": true }, \
-    { "UpdateStageName": "Download Linux x64", "UpdateSourcePlatform": "Linux", "UpdateSource": "FetchURL", "UpdateSourceData": "https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux", "UpdateSourceTarget": "pumpkin/pumpkin", "UpdateSourceConditionSetting": "Arch", "UpdateSourceConditionValue": "x86_64", "OverwriteExistingFiles": true }, \
-    { "UpdateStageName": "Download Linux ARM64", "UpdateSourcePlatform": "Linux", "UpdateSource": "FetchURL", "UpdateSourceData": "https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux", "UpdateSourceTarget": "pumpkin/pumpkin", "UpdateSourceConditionSetting": "Arch", "UpdateSourceConditionValue": "aarch64", "OverwriteExistingFiles": true }, \
-    { "UpdateStageName": "Make Executable", "UpdateSourcePlatform": "Linux", "UpdateSource": "SetExecutableFlag", "UpdateSourceArgs": "pumpkin/pumpkin" }, \
-    { "UpdateStageName": "Initial Start", "UpdateSource": "StartApplication" }, \
-    { "UpdateStageName": "Wait For Start", "UpdateSource": "WaitForStartupComplete" }, \
-    { "UpdateStageName": "Shutdown", "UpdateSource": "ShutdownApplication" } \
-]
+App.UpdateSources=[{"UpdateStageName":"Download Windows x64","UpdateSourcePlatform":"Windows","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Windows.exe","UpdateSourceTarget":"pumpkin.exe","OverwriteExistingFiles":true},{"UpdateStageName":"Download Linux x64","UpdateSourcePlatform":"Linux","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux","UpdateSourceTarget":"pumpkin","UpdateSourceConditionSetting":"Arch","UpdateSourceConditionValue":"x86_64","OverwriteExistingFiles":true},{"UpdateStageName":"Download Linux ARM64","UpdateSourcePlatform":"Linux","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux","UpdateSourceTarget":"pumpkin","UpdateSourceConditionSetting":"Arch","UpdateSourceConditionValue":"aarch64","OverwriteExistingFiles":true},{"UpdateStageName":"Make Executable","UpdateSourcePlatform":"Linux","UpdateSource":"SetExecutableFlag","UpdateSourceArgs":"pumpkin"},{"UpdateStageName":"Initial Start","UpdateSource":"StartApplication"},{"UpdateStageName":"Wait For Start","UpdateSource":"WaitForStartupComplete"},{"UpdateStageName":"Shutdown","UpdateSource":"ShutdownApplication"}]
 
 Console.AppReadyRegex=^.*Server is now running.*
 Console.UserJoinRegex=^.*(?<username>.+?) joined the game
 Console.UserLeaveRegex=^.*(?<username>.+?) left the game
-Console.UserChatRegex=^<(?<username>.+?)> (?<message>.+)
+Console.UserChatRegex=^.*<(?<username>.+?)> (?<message>.+)
 
 Meta.DisplayName=PumpkinMC
 Meta.Description=Pumpkin is a Minecraft server built entirely in Rust, offering a fast, efficient, and customizable experience.
 Meta.OS=3
+Meta.AarchSupport=Native
+Meta.Arch=x86_64, aarch64
 Meta.AppConfigId=pumpkinmc
 Meta.Author=PumpkinMC
 Meta.URL=https://pumpkinmc.org/
 Meta.DisplayImageSource=url:https://pumpkinmc.org/assets/icon.svg
+Meta.ConfigManifest=pumpkinmcconfig.json
+Meta.MetaConfigManifest=pumpkinmcmetaconfig.json
+Meta.ConfigRoot=pumpkinmc.kvp
+Meta.ConfigVersion=1
+Meta.MinAMPVersion=2.4.0.0
 Meta.ContainerPolicy=Recommended
+Meta.ReleaseNotes=Initial version
+Meta.BreakingReleaseNotes=
+Meta.ImportableExtensions=[]
