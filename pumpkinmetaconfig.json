@@ -1,0 +1,12 @@
+[
+    {
+        "ConfigFile": "config/configuration.toml",
+        "ConfigType": "toml",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "config/features.toml",
+        "ConfigType": "toml",
+        "AutoMap": true
+    }
+]
