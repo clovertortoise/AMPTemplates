@@ -1,7 +1,7 @@
 Meta.DisplayName=Pumpkin
 Meta.Description=Pumpkin is a blazingly fast Minecraft server implementation written in Rust.
 Meta.OS=Windows, Linux
-Meta.AarchSupport=True
+Meta.AarchSupport=Native
 Meta.Arch=x86_64
 Meta.Author=PumpkinMC
 Meta.URL=https://pumpkinmc.org/
@@ -10,7 +10,7 @@ Meta.EndpointURIFormat=
 Meta.ConfigManifest=pumpkinconfig.json
 Meta.MetaConfigManifest=pumpkinmetaconfig.json
 Meta.ConfigRoot=pumpkin.kvp
-Meta.MinAMPVersion=2.5.0.0
+Meta.MinAMPVersion=2.4.0.0
 Meta.SpecificDockerImage=cubecoders/ampbase:debian
 Meta.DockerRequired=False
 Meta.DockerBaseReadOnly=False
