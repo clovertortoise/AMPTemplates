@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "pumpkin/config/configuration.toml",
+        "ConfigFile": "config/configuration.toml",
         "ConfigType": "kvp",
         "ConfigFormat": "{0} = {1}",
         "Subsections": [
@@ -24,8 +24,8 @@
         ]
     },
     {
-        "ConfigFile": "pumpkin/config/features.toml",
-        "ConfigType": "kvp",
+        "ConfigFile": "config/features.toml",
+        "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
         "Subsections": [
             {
