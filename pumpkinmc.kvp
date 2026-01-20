@@ -1,44 +1,31 @@
-Description=Pumpkin is a Minecraft server built entirely in Rust, offering a fast, efficient, and customizable experience.
-StartOnBoot=True
-App.DisplayName=PumpkinMC
-App.Link=https://pumpkinmc.org/
-App.RootDir=./pumpkin/
-App.BaseDirectory=./pumpkin/
-App.ExecutableWin=pumpkin.exe
-App.ExecutableLinux=pumpkin
-App.WorkingDir=
-App.CommandLineArgs=
-App.ExitMethod=String
-App.ExitString=stop
-App.HasWriteableConsole=True
-App.HasReadableConsole=True
-App.ApplicationIPBinding=0.0.0.0
-App.ApplicationPort1=25565
-App.ApplicationPort2=25575
-App.ApplicationPort3=19132
-App.AppSettings={}
-App.UpdateSources=[{"UpdateStageName":"Download Windows x64","UpdateSourcePlatform":"Windows","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Windows.exe","UpdateSourceTarget":"pumpkin.exe","OverwriteExistingFiles":true},{"UpdateStageName":"Download Linux x64","UpdateSourcePlatform":"Linux","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux","UpdateSourceTarget":"pumpkin","UpdateSourceConditionSetting":"Arch","UpdateSourceConditionValue":"x86_64","OverwriteExistingFiles":true},{"UpdateStageName":"Download Linux ARM64","UpdateSourcePlatform":"Linux","UpdateSource":"FetchURL","UpdateSourceData":"https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux","UpdateSourceTarget":"pumpkin","UpdateSourceConditionSetting":"Arch","UpdateSourceConditionValue":"aarch64","OverwriteExistingFiles":true},{"UpdateStageName":"Make Executable","UpdateSourcePlatform":"Linux","UpdateSource":"SetExecutableFlag","UpdateSourceArgs":"pumpkin"},{"UpdateStageName":"Initial Start","UpdateSource":"StartApplication"},{"UpdateStageName":"Wait For Start","UpdateSource":"WaitForStartupComplete"},{"UpdateStageName":"Shutdown","UpdateSource":"ShutdownApplication"}]
+App.Name=PumpkinMC
+App.ConsoleName=Pumpkin Console
+App.Codename=pumpkinmc
+App.Description=A high-performance Minecraft server implementation built in Rust.
+App.Category=Game Servers
 
-Console.AppReadyRegex=^.*Server is now running.*
-Console.UserJoinRegex=^.*(?<username>.+?) joined the game
-Console.UserLeaveRegex=^.*(?<username>.+?) left the game
-Console.UserChatRegex=^.*<(?<username>.+?)> (?<message>.+)
+# Execution Logic
+App.ExecutableLinux=./pumpkin
+App.ExecutableWindows=pumpkin.exe
+App.WorkingDirectoryLinux=./
+App.WorkingDirectoryWindows=./
 
-Meta.DisplayName=PumpkinMC
-Meta.Description=Pumpkin is a Minecraft server built entirely in Rust, offering a fast, efficient, and customizable experience.
-Meta.OS=3
-Meta.AarchSupport=Native
-Meta.Arch=x86_64, aarch64
-Meta.AppConfigId=pumpkinmc
-Meta.Author=PumpkinMC
-Meta.URL=https://pumpkinmc.org/
-Meta.DisplayImageSource=url:https://pumpkinmc.org/assets/icon.svg
-Meta.ConfigManifest=pumpkinmcconfig.json
-Meta.MetaConfigManifest=pumpkinmcmetaconfig.json
-Meta.ConfigRoot=pumpkinmc.kvp
-Meta.ConfigVersion=1
-Meta.MinAMPVersion=2.4.0.0
-Meta.ContainerPolicy=Recommended
-Meta.ReleaseNotes=Initial version
-Meta.BreakingReleaseNotes=
-Meta.ImportableExtensions=[]
+# Linux Permission Fix: Ensures the downloaded binary is executable
+App.PrependCmdLineLinux=chmod +x pumpkin;
+
+# Command Line Arguments (Empty because we use TOML files)
+App.CommandLine=
+App.StopCommand=stop
+App.OutputEncoding=UTF-8
+
+# Update Engine (Direct Binary Download)
+UpdateSource.UpdateSourceType=WebDownload
+# Note: Defaults to Linux x86_64. Modify if hosting on ARM or Windows.
+UpdateSource.UpdateSourceURL=https://github.com/Pumpkin-MC/Pumpkin/releases/latest/download/pumpkin-linux-x86_64
+UpdateSource.TargetFilename=pumpkin
+UpdateSource.ExecutablePermission=True
+
+# Console Monitoring & Sleep Mode Triggers
+Console.ApplicationReadyRegex=(?i)Listening on
+Console.UserJoinRegex=(?i)Player (?<user>.*) joined the game
+Console.UserLeaveRegex=(?i)Player (?<user>.*) left the game
