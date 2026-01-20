@@ -17,7 +17,7 @@
         "FieldName": "java_edition_address",
         "InputType": "text",
         "Category": "Basic Configuration",
-        "DefaultValue": "\"0.0.0.0:25565\""
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort1}}\""
     },
     {
         "DisplayName": "Bedrock Edition Address",
@@ -25,7 +25,7 @@
         "FieldName": "bedrock_edition_address",
         "InputType": "text",
         "Category": "Basic Configuration",
-        "DefaultValue": "\"0.0.0.0:19132\""
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort3}}\""
     },
     {
         "DisplayName": "Max Players",
@@ -153,7 +153,7 @@
         "FieldName": "rcon_address",
         "InputType": "text",
         "Category": "RCON",
-        "DefaultValue": "\"0.0.0.0:25575\""
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort2}}\""
     },
     {
         "DisplayName": "RCON Password",
@@ -181,7 +181,7 @@
         "FieldName": "query_address",
         "InputType": "text",
         "Category": "Query",
-        "DefaultValue": "\"0.0.0.0:25565\""
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort1}}\""
     },
     {
         "DisplayName": "Enable LAN Broadcast",
