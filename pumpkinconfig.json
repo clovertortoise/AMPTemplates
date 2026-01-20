@@ -1,0 +1,266 @@
+[
+    {
+        "DisplayName": "Java Edition Address",
+        "Category": "Network",
+        "Description": "Address to bind Java Edition (Format: IP:Port).",
+        "FieldName": "java_edition_address",
+        "InputType": "text",
+        "DefaultValue": "0.0.0.0:{{$ServerPort}}",
+        "ParamFieldName": "java_edition_address"
+    },
+    {
+        "DisplayName": "Enable Bedrock Support",
+        "Category": "Network",
+        "Description": "Enable Bedrock Edition listeners.",
+        "FieldName": "bedrock_edition",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "bedrock_edition"
+    },
+    {
+        "DisplayName": "Bedrock Edition Address",
+        "Category": "Network",
+        "Description": "Address to bind Bedrock Edition (Format: IP:Port).",
+        "FieldName": "bedrock_edition_address",
+        "InputType": "text",
+        "DefaultValue": "0.0.0.0:{{$BedrockPort}}",
+        "ParamFieldName": "bedrock_edition_address"
+    },
+    {
+        "DisplayName": "Message of the Day (MOTD)",
+        "Category": "General",
+        "Description": "The server description.",
+        "FieldName": "motd",
+        "InputType": "text",
+        "DefaultValue": "A blazingly fast Pumpkin server!",
+        "ParamFieldName": "motd"
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "General",
+        "Description": "Maximum concurrent players.",
+        "FieldName": "max_players",
+        "InputType": "number",
+        "MinValue": "1",
+        "DefaultValue": "100",
+        "ParamFieldName": "max_players"
+    },
+    {
+        "DisplayName": "Online Mode",
+        "Category": "Security",
+        "Description": "Verify accounts with Mojang. Must be True for public servers.",
+        "FieldName": "online_mode",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "online_mode"
+    },
+    {
+        "DisplayName": "Enable Encryption",
+        "Category": "Security",
+        "Description": "Encrypt network packets. Required if Online Mode is true.",
+        "FieldName": "encryption",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "encryption"
+    },
+    {
+        "DisplayName": "Allow Console Commands",
+        "Category": "Console & Commands",
+        "Description": "Whether commands can be executed from the server console.",
+        "FieldName": "use_console",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "commands.use_console"
+    },
+    {
+        "DisplayName": "Log Player Commands",
+        "Category": "Console & Commands",
+        "Description": "Whether commands run by players should be logged to the console.",
+        "FieldName": "log_console",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "commands.log_console"
+    },
+    {
+        "DisplayName": "Default OP Level",
+        "Category": "Console & Commands",
+        "Description": "The default permission level for non-op players (usually 0).",
+        "FieldName": "default_op_level",
+        "InputType": "number",
+        "MinValue": "0",
+        "MaxValue": "4",
+        "DefaultValue": "0",
+        "ParamFieldName": "commands.default_op_level"
+    },
+    {
+        "DisplayName": "OP Permission Level",
+        "Category": "Console & Commands",
+        "Description": "The permission level granted when a player is opped.",
+        "FieldName": "op_permission_level",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "4",
+        "DefaultValue": "4",
+        "ParamFieldName": "op_permission_level"
+    },
+    {
+        "DisplayName": "White List",
+        "Category": "Security",
+        "Description": "Enable white list.",
+        "FieldName": "white_list",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "ParamFieldName": "white_list"
+    },
+    {
+        "DisplayName": "Enforce White List",
+        "Category": "Security",
+        "Description": "Kick players not on the whitelist if enabled while they are online.",
+        "FieldName": "enforce_whitelist",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "ParamFieldName": "enforce_whitelist"
+    },
+    {
+        "DisplayName": "Allow Chat Reports",
+        "Category": "Security",
+        "Description": "Allow clients to sign chat messages for reporting.",
+        "FieldName": "allow_chat_reports",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "ParamFieldName": "allow_chat_reports"
+    },
+    {
+        "DisplayName": "View Distance",
+        "Category": "Performance",
+        "Description": "Max render distance (chunks).",
+        "FieldName": "view_distance",
+        "InputType": "number",
+        "MinValue": "2",
+        "MaxValue": "32",
+        "DefaultValue": "10",
+        "ParamFieldName": "view_distance"
+    },
+    {
+        "DisplayName": "Simulation Distance",
+        "Category": "Performance",
+        "Description": "Max simulation distance (chunks).",
+        "FieldName": "simulation_distance",
+        "InputType": "number",
+        "MinValue": "2",
+        "MaxValue": "32",
+        "DefaultValue": "10",
+        "ParamFieldName": "simulation_distance"
+    },
+    {
+        "DisplayName": "Target TPS",
+        "Category": "Performance",
+        "Description": "Target Ticks Per Second.",
+        "FieldName": "tps",
+        "InputType": "number",
+        "DefaultValue": "20.0",
+        "ParamFieldName": "tps"
+    },
+    {
+        "DisplayName": "Allow Nether",
+        "Category": "World",
+        "Description": "Enable the Nether dimension.",
+        "FieldName": "allow_nether",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "allow_nether"
+    },
+    {
+        "DisplayName": "World Seed",
+        "Category": "World",
+        "Description": "Seed for world generation.",
+        "FieldName": "seed",
+        "InputType": "text",
+        "DefaultValue": "",
+        "ParamFieldName": "seed"
+    },
+    {
+        "DisplayName": "Default Gamemode",
+        "Category": "Gameplay",
+        "Description": "Default mode for new players.",
+        "FieldName": "default_gamemode",
+        "InputType": "enum",
+        "DefaultValue": "Survival",
+        "EnumValues": {
+            "Survival": "Survival",
+            "Creative": "Creative",
+            "Adventure": "Adventure",
+            "Spectator": "Spectator"
+        },
+        "ParamFieldName": "default_gamemode"
+    },
+    {
+        "DisplayName": "Force Gamemode",
+        "Category": "Gameplay",
+        "Description": "Force default gamemode on join.",
+        "FieldName": "force_gamemode",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "ParamFieldName": "force_gamemode"
+    },
+    {
+        "DisplayName": "Default Difficulty",
+        "Category": "Gameplay",
+        "Description": "Game difficulty.",
+        "FieldName": "default_difficulty",
+        "InputType": "enum",
+        "DefaultValue": "Normal",
+        "EnumValues": {
+            "Peaceful": "Peaceful",
+            "Easy": "Easy",
+            "Normal": "Normal",
+            "Hard": "Hard"
+        },
+        "ParamFieldName": "default_difficulty"
+    },
+    {
+        "DisplayName": "Enable Velocity Proxy",
+        "Category": "Proxy Settings",
+        "Description": "Enable support for Velocity proxy.",
+        "FieldName": "proxy_velocity_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "ParamFieldName": "networking.proxy.velocity.enabled"
+    },
+    {
+        "DisplayName": "Velocity Secret",
+        "Category": "Proxy Settings",
+        "Description": "The forwarding secret for Velocity.",
+        "FieldName": "proxy_velocity_secret",
+        "InputType": "password",
+        "DefaultValue": "",
+        "ParamFieldName": "networking.proxy.velocity.secret"
+    },
+    {
+        "DisplayName": "Enable RCON",
+        "Category": "Remote Admin",
+        "Description": "Required for AMP Console to function.",
+        "FieldName": "rcon_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "ParamFieldName": "networking.rcon.enabled"
+    },
+    {
+        "DisplayName": "RCON Address",
+        "Category": "Remote Admin",
+        "Description": "Address for RCON listener (Format IP:Port).",
+        "FieldName": "rcon_address",
+        "InputType": "text",
+        "DefaultValue": "0.0.0.0:{{$RCONPort}}",
+        "ParamFieldName": "networking.rcon.address"
+    },
+    {
+        "DisplayName": "RCON Password",
+        "Category": "Remote Admin",
+        "Description": "Password for RCON.",
+        "FieldName": "rcon_password",
+        "InputType": "password",
+        "DefaultValue": "",
+        "ParamFieldName": "networking.rcon.password"
+    }
+]
