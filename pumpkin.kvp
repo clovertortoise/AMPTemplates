@@ -7,18 +7,19 @@ Meta.URL=https://github.com/Pumpkin-MC/Pumpkin
 Meta.ConfigManifest=pumpkinconfig.json
 Meta.MetaConfigManifest=pumpkinmetaconfig.json
 Meta.ConfigRoot=pumpkin.kvp
-Meta.Version=1.7
+Meta.Version=1.5
 Meta.AppConfigId=PumpkinMC
 Meta.AppIsMultiIPAware=True
 Meta.Prerequisites=[]
 Meta.DisplayImageSource=Generic:Application
+# Fixes the broken connection link
 Meta.EndpointURIFormat={ip}:{GenericModule.App.Ports.$ServerPort}
 
 App.DisplayName=PumpkinMC
 App.BaseDirectory=./pumpkin/
-App.ExecutableLinux=pumpkin/PumpkinServer
+App.ExecutableLinux=PumpkinServer
 App.CommandLineArgs=
-App.WorkingDir=pumpkin
+App.WorkingDir=./
 App.ExitMethod=String
 App.ExitString=stop
 App.ExitTimeout=15
