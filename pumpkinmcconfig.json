@@ -1,0 +1,198 @@
+[
+    {
+        "DisplayName": "Server Architecture",
+        "Description": "Select the architecture of the server (Linux only).",
+        "FieldName": "Arch",
+        "InputType": "enum",
+        "Category": "Update Settings",
+        "EnumValues": {
+            "x86_64": "x86_64 (Intel/AMD)",
+            "aarch64": "ARM64 (aarch64)"
+        },
+        "DefaultValue": "x86_64"
+    },
+    {
+        "DisplayName": "Java Edition Address",
+        "Description": "The address to bind the Java Edition server to (Keep quotes!).",
+        "FieldName": "java_edition_address",
+        "InputType": "text",
+        "Category": "Basic Configuration",
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort1}}\""
+    },
+    {
+        "DisplayName": "Bedrock Edition Address",
+        "Description": "The address to bind the Bedrock Edition server to (Keep quotes!).",
+        "FieldName": "bedrock_edition_address",
+        "InputType": "text",
+        "Category": "Basic Configuration",
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort3}}\""
+    },
+    {
+        "DisplayName": "Max Players",
+        "Description": "The maximum number of players allowed on the server.",
+        "FieldName": "max_players",
+        "InputType": "number",
+        "Category": "Basic Configuration",
+        "DefaultValue": "100"
+    },
+    {
+        "DisplayName": "View Distance",
+        "Description": "The maximum view distance for players.",
+        "FieldName": "view_distance",
+        "InputType": "number",
+        "Category": "World Settings",
+        "DefaultValue": "10"
+    },
+    {
+        "DisplayName": "Simulation Distance",
+        "Description": "The maximum simulation distance for players.",
+        "FieldName": "simulation_distance",
+        "InputType": "number",
+        "Category": "World Settings",
+        "DefaultValue": "10"
+    },
+    {
+        "DisplayName": "Default Difficulty",
+        "Description": "The default game difficulty.",
+        "FieldName": "default_difficulty",
+        "InputType": "enum",
+        "Category": "World Settings",
+        "EnumValues": {
+            "\"Peaceful\"": "Peaceful",
+            "\"Easy\"": "Easy",
+            "\"Normal\"": "Normal",
+            "\"Hard\"": "Hard"
+        },
+        "DefaultValue": "\"Normal\""
+    },
+    {
+        "DisplayName": "Allow Nether",
+        "Description": "Whether the Nether dimension is enabled.",
+        "FieldName": "allow_nether",
+        "InputType": "enum",
+        "Category": "World Settings",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "true"
+    },
+    {
+        "DisplayName": "Hardcore",
+        "Description": "Whether the server is in hardcore mode.",
+        "FieldName": "hardcore",
+        "InputType": "enum",
+        "Category": "World Settings",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "false"
+    },
+    {
+        "DisplayName": "Online Mode",
+        "Description": "Whether online mode is enabled. Requires valid Minecraft accounts.",
+        "FieldName": "online_mode",
+        "InputType": "enum",
+        "Category": "Security",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "true"
+    },
+    {
+        "DisplayName": "Encryption",
+        "Description": "Whether packet encryption is enabled. Required when online mode is enabled.",
+        "FieldName": "encryption",
+        "InputType": "enum",
+        "Category": "Security",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "true"
+    },
+    {
+        "DisplayName": "MOTD",
+        "Description": "Message of the Day (Keep quotes!).",
+        "FieldName": "motd",
+        "InputType": "text",
+        "Category": "Basic Configuration",
+        "DefaultValue": "\"A Blazing fast Pumpkin Server!\""
+    },
+    {
+        "DisplayName": "Default Gamemode",
+        "Description": "The default game mode for players.",
+        "FieldName": "default_gamemode",
+        "InputType": "enum",
+        "Category": "Gameplay",
+        "EnumValues": {
+            "\"Survival\"": "Survival",
+            "\"Creative\"": "Creative",
+            "\"Adventure\"": "Adventure",
+            "\"Spectator\"": "Spectator"
+        },
+        "DefaultValue": "\"Survival\""
+    },
+    {
+        "DisplayName": "Enable RCON",
+        "Description": "Whether to enable RCON.",
+        "FieldName": "rcon_enabled",
+        "InputType": "enum",
+        "Category": "RCON",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "false"
+    },
+    {
+        "DisplayName": "RCON Address",
+        "Description": "The address to bind RCON to (Keep quotes!).",
+        "FieldName": "rcon_address",
+        "InputType": "text",
+        "Category": "RCON",
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort2}}\""
+    },
+    {
+        "DisplayName": "RCON Password",
+        "Description": "The password for RCON (Keep quotes!).",
+        "FieldName": "rcon_password",
+        "InputType": "text",
+        "Category": "RCON",
+        "DefaultValue": "\"\""
+    },
+    {
+        "DisplayName": "Enable Query",
+        "Description": "Whether to enable GameSpy4 Query.",
+        "FieldName": "query_enabled",
+        "InputType": "enum",
+        "Category": "Query",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "true"
+    },
+    {
+        "DisplayName": "Query Address",
+        "Description": "The address to bind Query to (Keep quotes!).",
+        "FieldName": "query_address",
+        "InputType": "text",
+        "Category": "Query",
+        "DefaultValue": "\"0.0.0.0:{{$ApplicationPort1}}\""
+    },
+    {
+        "DisplayName": "Enable LAN Broadcast",
+        "Description": "Whether to enable LAN broadcast.",
+        "FieldName": "lan_broadcast_enabled",
+        "InputType": "enum",
+        "Category": "Networking",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        },
+        "DefaultValue": "false"
+    }
+]
