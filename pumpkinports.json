@@ -1,16 +1,23 @@
 [
     {
-        "PortDisplayName": "Java Port",
-        "PortName": "ApplicationPort1",
         "Protocol": "TCP",
-        "DefaultPort": 25565,
-        "AllowChange": true
+        "Port": 25565,
+        "Ref": "ApplicationPort1",
+        "Name": "Java Server Port",
+        "Description": "Port for Java Edition"
     },
     {
-        "PortDisplayName": "Bedrock Port",
-        "PortName": "ApplicationPort2",
         "Protocol": "UDP",
-        "DefaultPort": 19132,
-        "AllowChange": true
+        "Port": 19132,
+        "Ref": "ApplicationPort2",
+        "Name": "Bedrock Server Port",
+        "Description": "Port for Bedrock Edition"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 25575,
+        "Ref": "RemoteAdminPort",
+        "Name": "RCON Port",
+        "Description": "Port for RCON"
     }
 ]

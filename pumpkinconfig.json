@@ -6,7 +6,7 @@
         "Keywords": "ip port java address",
         "FieldName": "java_edition_address",
         "InputType": "text",
-        "DefaultValue": "0.0.0.0:{{$ApplicationPort1}}",
+        "DefaultValue": "0.0.0.0:25565",
         "IncludeInCommandLine": false
     },
     {
@@ -16,7 +16,7 @@
         "Keywords": "ip port bedrock address",
         "FieldName": "bedrock_edition_address",
         "InputType": "text",
-        "DefaultValue": "0.0.0.0:{{$ApplicationPort2}}",
+        "DefaultValue": "0.0.0.0:19132",
         "IncludeInCommandLine": false
     },
     {
@@ -37,6 +37,36 @@
         "FieldName": "bedrock_edition",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Enable RCON",
+        "Category": "Network",
+        "Description": "Enable Remote Console (RCON) protocol",
+        "Keywords": "rcon enable",
+        "FieldName": "rcon_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "RCON Address",
+        "Category": "Network",
+        "Description": "The address and port for RCON (Format: IP:Port)",
+        "Keywords": "rcon address",
+        "FieldName": "rcon_address",
+        "InputType": "text",
+        "DefaultValue": "0.0.0.0:25575",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "RCON Password",
+        "Category": "Security",
+        "Description": "Password for RCON access",
+        "Keywords": "rcon password",
+        "FieldName": "rcon_password",
+        "InputType": "password",
+        "DefaultValue": "",
         "IncludeInCommandLine": false
     },
     {
