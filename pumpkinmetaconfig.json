@@ -49,13 +49,8 @@
             {
                 "Heading": "logging",
                 "SettingMappings": {
-                    "file": "logging_file"
-                }
-            },
-            {
-                "Heading": "world.chunk",
-                "SettingMappings": {
-                    "type": "world_chunk_type"
+                    "file": "logging_file",
+                    "level": "logging_level"
                 }
             },
             {
@@ -202,6 +197,7 @@
                 "Heading": "logging",
                 "SettingMappings": {
                     "enabled": "logging_enabled",
+                    "env": "logging_env",
                     "threads": "logging_threads",
                     "color": "logging_color",
                     "timestamp": "logging_timestamp"
