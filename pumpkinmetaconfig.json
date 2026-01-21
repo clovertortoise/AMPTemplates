@@ -1,47 +1,57 @@
 [
     {
-        "ConfigFile": "config/configuration.toml",
-        "ConfigType": "kvp",
+        "ConfigFile": "configuration.toml",
+        "ConfigType": "ini",
         "ConfigFormat": "{0} = \"{1}\"",
         "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$",
-        "SettingMappings": {
-            "java_edition_address": "java_edition_address",
-            "bedrock_edition_address": "bedrock_edition_address",
-            "seed": "seed",
-            "default_difficulty": "default_difficulty",
-            "motd": "motd",
-            "default_gamemode": "default_gamemode",
-            "favicon_path": "favicon_path",
-            "default_level_name": "default_level_name"
-        }
+        "Subsections": [
+            {
+                "Heading": "",
+                "SettingMappings": {
+                    "java_edition_address": "java_edition_address",
+                    "bedrock_edition_address": "bedrock_edition_address",
+                    "seed": "seed",
+                    "motd": "motd",
+                    "default_difficulty": "default_difficulty",
+                    "default_gamemode": "default_gamemode",
+                    "default_level_name": "default_level_name",
+                    "favicon_path": "favicon_path"
+                }
+            }
+        ]
     },
     {
-        "ConfigFile": "config/configuration.toml",
-        "ConfigType": "kvp",
+        "ConfigFile": "configuration.toml",
+        "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"].*?)$",
-        "SettingMappings": {
-            "java_edition": "java_edition",
-            "bedrock_edition": "bedrock_edition",
-            "max_players": "max_players",
-            "view_distance": "view_distance",
-            "simulation_distance": "simulation_distance",
-            "op_permission_level": "op_permission_level",
-            "allow_nether": "allow_nether",
-            "hardcore": "hardcore",
-            "online_mode": "online_mode",
-            "encryption": "encryption",
-            "tps": "tps",
-            "force_gamemode": "force_gamemode",
-            "scrub_ips": "scrub_ips",
-            "use_favicon": "use_favicon",
-            "allow_chat_reports": "allow_chat_reports",
-            "white_list": "white_list",
-            "enforce_whitelist": "enforce_whitelist"
-        }
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
+        "Subsections": [
+            {
+                "Heading": "",
+                "SettingMappings": {
+                    "java_edition": "java_edition",
+                    "bedrock_edition": "bedrock_edition",
+                    "max_players": "max_players",
+                    "view_distance": "view_distance",
+                    "simulation_distance": "simulation_distance",
+                    "op_permission_level": "op_permission_level",
+                    "allow_nether": "allow_nether",
+                    "hardcore": "hardcore",
+                    "online_mode": "online_mode",
+                    "encryption": "encryption",
+                    "tps": "tps",
+                    "force_gamemode": "force_gamemode",
+                    "scrub_ips": "scrub_ips",
+                    "use_favicon": "use_favicon",
+                    "allow_chat_reports": "allow_chat_reports",
+                    "white_list": "white_list",
+                    "enforce_whitelist": "enforce_whitelist"
+                }
+            }
+        ]
     },
     {
-        "ConfigFile": "config/features.toml",
+        "ConfigFile": "features.toml",
         "ConfigType": "ini",
         "ConfigFormat": "{0} = \"{1}\"",
         "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$",
@@ -72,11 +82,49 @@
                 "SettingMappings": {
                     "format": "chat_format"
                 }
+            },
+            {
+                "Heading": "logging",
+                "SettingMappings": {
+                    "file": "logging_file"
+                }
+            },
+            {
+                "Heading": "world.chunk",
+                "SettingMappings": {
+                    "type": "world_chunk_type"
+                }
+            },
+            {
+                "Heading": "world.chunk.compression",
+                "SettingMappings": {
+                    "algorithm": "world_chunk_compression_algorithm"
+                }
+            },
+            {
+                "Heading": "server_links",
+                "SettingMappings": {
+                    "bug_report": "link_bug_report",
+                    "support": "link_support",
+                    "status": "link_status",
+                    "feedback": "link_feedback",
+                    "community": "link_community",
+                    "website": "link_website",
+                    "forums": "link_forums",
+                    "news": "link_news",
+                    "announcements": "link_announcements"
+                }
+            },
+            {
+                "Heading": "networking.query",
+                "SettingMappings": {
+                    "address": "query_address"
+                }
             }
         ]
     },
     {
-        "ConfigFile": "config/features.toml",
+        "ConfigFile": "features.toml",
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
         "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
@@ -126,10 +174,46 @@
                 }
             },
             {
+                "Heading": "networking.authentication.textures",
+                "SettingMappings": {
+                    "enabled": "texture_filtering_enabled"
+                }
+            },
+            {
                 "Heading": "resource_pack",
                 "SettingMappings": {
                     "enabled": "resource_pack_enabled",
                     "force": "resource_pack_force"
+                }
+            },
+            {
+                "Heading": "logging",
+                "SettingMappings": {
+                    "enabled": "logging_enabled"
+                }
+            },
+            {
+                "Heading": "world.chunk.compression",
+                "SettingMappings": {
+                    "level": "world_chunk_compression_level"
+                }
+            },
+            {
+                "Heading": "player_data",
+                "SettingMappings": {
+                    "save_player_data": "save_player_data"
+                }
+            },
+            {
+                "Heading": "networking.query",
+                "SettingMappings": {
+                    "enabled": "query_enabled"
+                }
+            },
+            {
+                "Heading": "fun",
+                "SettingMappings": {
+                    "april_fools": "april_fools"
                 }
             }
         ]
