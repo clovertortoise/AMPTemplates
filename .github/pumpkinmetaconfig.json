@@ -40,7 +40,10 @@
             "use_console": "commands.use_console",
             "log_console": "commands.log_console",
             "default_op_level": "commands.default_op_level",
-            "pvp_enabled": "pvp.enabled"
+            "pvp_enabled": "pvp.enabled",
+            "rcon_enabled": "rcon.enabled",
+            "rcon_address": "rcon.address",
+            "rcon_password": "rcon.password"
         }
     }
 ]

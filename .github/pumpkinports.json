@@ -12,5 +12,12 @@
         "Ref": "ApplicationPort2",
         "Name": "Bedrock Server Port",
         "Description": "Port for Bedrock Edition"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 25575,
+        "Ref": "RemoteAdminPort",
+        "Name": "RCON Port",
+        "Description": "Port for RCON"
     }
 ]
