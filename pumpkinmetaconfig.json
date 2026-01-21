@@ -157,13 +157,16 @@
             {
                 "Heading": "networking.authentication.player_profile",
                 "SettingMappings": {
-                    "allow_banned_players": "auth_allow_banned"
+                    "allow_banned_players": "auth_allow_banned",
+                    "allowed_actions": "auth_allowed_actions"
                 }
             },
             {
                 "Heading": "networking.authentication.textures",
                 "SettingMappings": {
-                    "enabled": "texture_filtering_enabled"
+                    "enabled": "texture_filtering_enabled",
+                    "allowed_url_schemes": "auth_allowed_url_schemes",
+                    "allowed_url_domains": "auth_allowed_url_domains"
                 }
             },
             {

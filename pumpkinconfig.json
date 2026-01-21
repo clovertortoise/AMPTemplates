@@ -1184,5 +1184,38 @@
             "True": "true"
         },
         "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Auth Allowed Actions",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Actions allowed for banned players. Keep format: [\"ACTION1\", \"ACTION2\"]",
+        "Keywords": "auth actions banned",
+        "FieldName": "auth_allowed_actions",
+        "InputType": "text",
+        "DefaultValue": "[\"FORCED_NAME_CHANGE\", \"USING_BANNED_SKIN\"]",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Auth Allowed URL Schemes",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Allowed URL schemes for textures. Keep format: [\"http\", \"https\"]",
+        "Keywords": "auth url schemes",
+        "FieldName": "auth_allowed_url_schemes",
+        "InputType": "text",
+        "DefaultValue": "[\"http\", \"https\"]",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Auth Allowed URL Domains",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Allowed URL domains for textures. Keep format: [\"domain1\", \"domain2\"]",
+        "Keywords": "auth url domains",
+        "FieldName": "auth_allowed_url_domains",
+        "InputType": "text",
+        "DefaultValue": "[\".minecraft.net\", \".mojang.com\"]",
+        "IncludeInCommandLine": false
     }
 ]
