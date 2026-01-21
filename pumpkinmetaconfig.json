@@ -10,7 +10,7 @@
         "ConfigFile": "config/configuration.toml",
         "ConfigType": "kvp",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"].*)$",
         "AutoMap": true
     },
     {
@@ -78,6 +78,13 @@
                 "SettingMappings": {
                     "address": "query_address"
                 }
+            },
+            {
+                "Heading": "networking.authentication",
+                "SettingMappings": {
+                    "auth_url": "auth_url",
+                    "prevent_proxy_connection_auth_url": "auth_prevent_proxy_url"
+                }
             }
         ]
     },
@@ -85,7 +92,7 @@
         "ConfigFile": "config/features.toml",
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"].*)$",
         "Subsections": [
             {
                 "Heading": "commands",
@@ -183,7 +190,8 @@
             {
                 "Heading": "networking.lan_broadcast",
                 "SettingMappings": {
-                    "enabled": "lan_broadcast_enabled"
+                    "enabled": "lan_broadcast_enabled",
+                    "port": "lan_broadcast_port"
                 }
             },
             {
