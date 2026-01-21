@@ -6,7 +6,7 @@ Meta.Arch=All
 Meta.Author=PumpkinMC
 Meta.URL=https://pumpkinmc.org/
 Meta.DisplayImageSource=url:https://avatars.githubusercontent.com/u/193089026?s=200&v=4
-Meta.EndpointURIFormat={ip}:{GenericModule.App.Ports.$ApplicationPort1}
+Meta.EndpointURIFormat={ip}:{GenericModule.App.Ports.$ServerPort}
 Meta.ConfigManifest=pumpkinconfig.json
 Meta.MetaConfigManifest=pumpkinmetaconfig.json
 Meta.ConfigRoot=pumpkin.kvp
@@ -55,7 +55,7 @@ App.SupportsIPv6=False
 App.ApplicationIPBinding=0.0.0.0
 App.Ports=@IncludeJson[pumpkinports.json]
 App.AdminPortRef=RemoteAdminPort
-App.PrimaryApplicationPortRef=ApplicationPort1
+App.PrimaryApplicationPortRef=ServerPort
 App.UniversalSleepApplicationUDPPortRef=0
 App.UniversalSleepSteamQueryPortRef=0
 App.MaxUsers=20

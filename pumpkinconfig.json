@@ -44,7 +44,7 @@
         "Keywords": "ip port java address",
         "FieldName": "java_edition_address",
         "InputType": "text",
-        "DefaultValue": "0.0.0.0:{{$ApplicationPort1}}",
+        "DefaultValue": "0.0.0.0:{{$ServerPort}}",
         "IncludeInCommandLine": false
     },
     {
@@ -55,7 +55,7 @@
         "Keywords": "ip port bedrock address",
         "FieldName": "bedrock_edition_address",
         "InputType": "text",
-        "DefaultValue": "0.0.0.0:{{$ApplicationPort2}}",
+        "DefaultValue": "0.0.0.0:{{$BedrockPort}}",
         "IncludeInCommandLine": false
     },
     {

@@ -1,6 +1,6 @@
 [
     {
-        "PortFieldName": "ApplicationPort1",
+        "PortFieldName": "ServerPort",
         "DisplayName": "Java Edition Port",
         "Description": "The main port for Java Edition players",
         "DefaultPort": 25565,
@@ -8,7 +8,7 @@
         "AllowUserChange": true
     },
     {
-        "PortFieldName": "ApplicationPort2",
+        "PortFieldName": "BedrockPort",
         "DisplayName": "Bedrock Edition Port",
         "Description": "The port for Bedrock Edition players",
         "DefaultPort": 19132,
