@@ -41,9 +41,20 @@
             "log_console": "commands.log_console",
             "default_op_level": "commands.default_op_level",
             "pvp_enabled": "pvp.enabled",
-            "rcon_enabled": "rcon.enabled",
-            "rcon_address": "rcon.address",
-            "rcon_password": "rcon.password"
+            "rcon_enabled": "networking.rcon.enabled",
+            "rcon_address": "networking.rcon.address",
+            "rcon_password": "networking.rcon.password",
+            "proxy_enabled": "networking.proxy.enabled",
+            "velocity_enabled": "networking.proxy.velocity.enabled",
+            "velocity_secret": "networking.proxy.velocity.secret",
+            "bungeecord_enabled": "networking.proxy.bungeecord.enabled",
+            "prevent_proxy_connections": "networking.authentication.prevent_proxy_connections",
+            "resource_pack_enabled": "resource_pack.enabled",
+            "resource_pack_url": "resource_pack.url",
+            "resource_pack_sha1": "resource_pack.sha1",
+            "resource_pack_prompt_message": "resource_pack.prompt_message",
+            "resource_pack_force": "resource_pack.force",
+            "chat_format": "chat.format"
         }
     }
 ]
