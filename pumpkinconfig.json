@@ -90,6 +90,46 @@
         "IncludeInCommandLine": false
     },
     {
+        "DisplayName": "Scrub IPs",
+        "Category": "Security",
+        "Description": "Scrub IP addresses from logs",
+        "Keywords": "scrub ip logs",
+        "FieldName": "scrub_ips",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Allow Chat Reports",
+        "Category": "Security",
+        "Description": "Allow players to report chat messages",
+        "Keywords": "chat report",
+        "FieldName": "allow_chat_reports",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Whitelist Enabled",
+        "Category": "Security",
+        "Description": "Enable server whitelist",
+        "Keywords": "whitelist",
+        "FieldName": "white_list",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Enforce Whitelist",
+        "Category": "Security",
+        "Description": "Kick players not on the whitelist",
+        "Keywords": "whitelist enforce",
+        "FieldName": "enforce_whitelist",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "IncludeInCommandLine": false
+    },
+    {
         "DisplayName": "Message of the Day",
         "Category": "General",
         "Description": "The server description shown in the server list",
@@ -106,7 +146,17 @@
         "Keywords": "max players slots",
         "FieldName": "max_players",
         "InputType": "number",
-        "DefaultValue": 20,
+        "DefaultValue": 1000,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Target TPS",
+        "Category": "General",
+        "Description": "Target Ticks Per Second",
+        "Keywords": "tps tick rate",
+        "FieldName": "tps",
+        "InputType": "number",
+        "DefaultValue": 20.0,
         "IncludeInCommandLine": false
     },
     {
@@ -162,6 +212,16 @@
         "IncludeInCommandLine": false
     },
     {
+        "DisplayName": "Force Gamemode",
+        "Category": "Gameplay",
+        "Description": "Force default gamemode on join",
+        "Keywords": "force gamemode",
+        "FieldName": "force_gamemode",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "IncludeInCommandLine": false
+    },
+    {
         "DisplayName": "Allow Nether",
         "Category": "Gameplay",
         "Description": "Allow players to travel to the Nether",
@@ -182,13 +242,13 @@
         "IncludeInCommandLine": false
     },
     {
-        "DisplayName": "Allow Chat Reports",
-        "Category": "Security",
-        "Description": "Allow players to report chat messages",
-        "Keywords": "chat report",
-        "FieldName": "allow_chat_reports",
+        "DisplayName": "PVP Enabled",
+        "Category": "Gameplay",
+        "Description": "Enable Player vs Player combat",
+        "Keywords": "pvp combat",
+        "FieldName": "pvp_enabled",
         "InputType": "checkbox",
-        "DefaultValue": "false",
+        "DefaultValue": "true",
         "IncludeInCommandLine": false
     },
     {
@@ -209,6 +269,26 @@
         "FieldName": "seed",
         "InputType": "text",
         "DefaultValue": "",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Use Favicon",
+        "Category": "General",
+        "Description": "Use a custom server icon",
+        "Keywords": "favicon icon",
+        "FieldName": "use_favicon",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Favicon Path",
+        "Category": "General",
+        "Description": "Path to the server icon file",
+        "Keywords": "favicon path",
+        "FieldName": "favicon_path",
+        "InputType": "text",
+        "DefaultValue": "icon.png",
         "IncludeInCommandLine": false
     },
     {
@@ -239,16 +319,6 @@
         "FieldName": "default_op_level",
         "InputType": "number",
         "DefaultValue": 0,
-        "IncludeInCommandLine": false
-    },
-    {
-        "DisplayName": "PVP Enabled",
-        "Category": "Gameplay",
-        "Description": "Enable Player vs Player combat",
-        "Keywords": "pvp combat",
-        "FieldName": "pvp_enabled",
-        "InputType": "checkbox",
-        "DefaultValue": "true",
         "IncludeInCommandLine": false
     }
 ]

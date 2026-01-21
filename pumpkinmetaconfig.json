@@ -5,7 +5,7 @@
         "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = \"{1}\"",
-        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$"
     },
     {
         "ConfigFile": "config/configuration.toml",
@@ -13,7 +13,7 @@
         "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$"
     },
     {
         "ConfigFile": "config/features.toml",
@@ -21,7 +21,7 @@
         "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = \"{1}\"",
-        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$"
     },
     {
         "ConfigFile": "config/features.toml",
@@ -29,13 +29,13 @@
         "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$"
     },
     {
         "ConfigFile": "config/features.toml",
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$",
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
         "Mappings": {
             "use_console": "commands.use_console",
             "log_console": "commands.log_console",
