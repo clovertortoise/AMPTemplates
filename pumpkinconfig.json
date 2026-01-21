@@ -30,6 +30,10 @@
         "FieldName": "online_mode",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -63,6 +67,10 @@
         "FieldName": "java_edition",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -74,6 +82,10 @@
         "FieldName": "bedrock_edition",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -85,6 +97,10 @@
         "FieldName": "encryption",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -96,6 +112,10 @@
         "FieldName": "scrub_ips",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -107,6 +127,10 @@
         "FieldName": "white_list",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -118,6 +142,10 @@
         "FieldName": "enforce_whitelist",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -129,6 +157,10 @@
         "FieldName": "use_favicon",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -162,6 +194,10 @@
         "FieldName": "allow_chat_reports",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -251,6 +287,10 @@
         "FieldName": "force_gamemode",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -284,6 +324,10 @@
         "FieldName": "allow_nether",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -295,6 +339,10 @@
         "FieldName": "hardcore",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -306,6 +354,10 @@
         "FieldName": "pvp_enabled",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -317,6 +369,10 @@
         "FieldName": "rcon_enabled",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -350,6 +406,10 @@
         "FieldName": "use_console",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -361,6 +421,10 @@
         "FieldName": "log_console",
         "InputType": "checkbox",
         "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -383,6 +447,10 @@
         "FieldName": "proxy_enabled",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -394,6 +462,10 @@
         "FieldName": "velocity_enabled",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -416,6 +488,10 @@
         "FieldName": "bungeecord_enabled",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -427,6 +503,10 @@
         "FieldName": "prevent_proxy_connections",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -438,6 +518,10 @@
         "FieldName": "resource_pack_enabled",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     },
     {
@@ -482,6 +566,10 @@
         "FieldName": "resource_pack_force",
         "InputType": "checkbox",
         "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
         "IncludeInCommandLine": false
     }
 ]
