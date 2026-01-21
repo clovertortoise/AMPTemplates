@@ -241,7 +241,7 @@
         "Keywords": "seed generator",
         "FieldName": "seed",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "1768245843390242324",
         "IncludeInCommandLine": false
     },
     {
@@ -796,6 +796,387 @@
         "Description": "Enable player texture filtering (skins, capes)",
         "Keywords": "texture filtering",
         "FieldName": "texture_filtering_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Use TTY",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Use TTY for console input",
+        "Keywords": "tty console",
+        "FieldName": "use_tty",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "PVP Hurt Animation",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Enable damage animation",
+        "Keywords": "pvp animation",
+        "FieldName": "pvp_hurt_animation",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Protect Creative",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Protect creative mode players from damage",
+        "Keywords": "pvp creative protection",
+        "FieldName": "pvp_protect_creative",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "PVP Knockback",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Enable knockback from attacks",
+        "Keywords": "pvp knockback",
+        "FieldName": "pvp_knockback",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "PVP Swing",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Enable arm swing animation",
+        "Keywords": "pvp swing",
+        "FieldName": "pvp_swing",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "RCON Max Connections",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Maximum number of RCON connections",
+        "Keywords": "rcon connections",
+        "FieldName": "rcon_max_connections",
+        "InputType": "number",
+        "DefaultValue": 0,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Log RCON Success",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Log successful RCON logins",
+        "Keywords": "rcon log success",
+        "FieldName": "rcon_log_success",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Log RCON Wrong Password",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Log failed RCON logins",
+        "Keywords": "rcon log fail",
+        "FieldName": "rcon_log_wrong_pass",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Log RCON Commands",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Log commands executed via RCON",
+        "Keywords": "rcon log commands",
+        "FieldName": "rcon_log_commands",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Log RCON Quit",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Log RCON disconnections",
+        "Keywords": "rcon log quit",
+        "FieldName": "rcon_log_quit",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Authentication Enabled",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Enable Mojang authentication",
+        "Keywords": "auth enable",
+        "FieldName": "auth_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Auth Connect Timeout",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Timeout for auth connection (ms)",
+        "Keywords": "auth timeout",
+        "FieldName": "auth_connect_timeout",
+        "InputType": "number",
+        "DefaultValue": 5000,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Auth Read Timeout",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Timeout for auth reading (ms)",
+        "Keywords": "auth timeout",
+        "FieldName": "auth_read_timeout",
+        "InputType": "number",
+        "DefaultValue": 5000,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Allow Banned Players",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Allow players banned by Mojang services",
+        "Keywords": "auth banned",
+        "FieldName": "auth_allow_banned",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Skin Textures",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Download player skins",
+        "Keywords": "texture skin",
+        "FieldName": "texture_skin",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Cape Textures",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Download player capes",
+        "Keywords": "texture cape",
+        "FieldName": "texture_cape",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Elytra Textures",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Download player elytra textures",
+        "Keywords": "texture elytra",
+        "FieldName": "texture_elytra",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Packet Compression",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Enable network packet compression",
+        "Keywords": "compression enable",
+        "FieldName": "compression_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Compression Threshold",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Minimum packet size for compression",
+        "Keywords": "compression threshold",
+        "FieldName": "compression_threshold",
+        "InputType": "number",
+        "DefaultValue": 256,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Compression Level",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Zlib compression level",
+        "Keywords": "compression level",
+        "FieldName": "compression_level",
+        "InputType": "number",
+        "DefaultValue": 4,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "LAN Broadcast",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Broadcast server to LAN",
+        "Keywords": "lan broadcast",
+        "FieldName": "lan_broadcast_enabled",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Logging Threads",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Enable thread names in logs",
+        "Keywords": "logging threads",
+        "FieldName": "logging_threads",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Logging Color",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Enable colored logs",
+        "Keywords": "logging color",
+        "FieldName": "logging_color",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Logging Timestamp",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Advanced:extension:3",
+        "Description": "Enable timestamps in logs",
+        "Keywords": "logging timestamp",
+        "FieldName": "logging_timestamp",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Write Chunks in Place",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Write chunk data directly to region files",
+        "Keywords": "world write in place",
+        "FieldName": "world_write_in_place",
+        "InputType": "checkbox",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Player Data Save Interval",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Interval in seconds to save player data",
+        "Keywords": "save player interval",
+        "FieldName": "save_player_cron_interval",
+        "InputType": "number",
+        "DefaultValue": 300,
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Server Links Enabled",
+        "Category": "Pumpkin:stadia_controller",
+        "Subcategory": "Server Links:link:4",
+        "Description": "Enable custom server links",
+        "Keywords": "link enabled",
+        "FieldName": "server_links_enabled",
         "InputType": "checkbox",
         "DefaultValue": "true",
         "EnumValues": {
