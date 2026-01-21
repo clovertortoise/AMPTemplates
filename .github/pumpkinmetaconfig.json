@@ -1,0 +1,49 @@
+[
+    {
+        "ConfigFile": "configuration.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = \"{1}\"",
+        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
+    },
+    {
+        "ConfigFile": "configuration.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = {1}",
+        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
+    },
+    {
+        "ConfigFile": "features.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = \"{1}\"",
+        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
+    },
+    {
+        "ConfigFile": "features.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = {1}",
+        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
+    },
+    {
+        "ConfigFile": "features.toml",
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = {1}",
+        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$",
+        "Mappings": {
+            "use_console": "commands.use_console",
+            "log_console": "commands.log_console",
+            "default_op_level": "commands.default_op_level",
+            "pvp_enabled": "pvp.enabled",
+            "rcon_enabled": "rcon.enabled",
+            "rcon_address": "rcon.address",
+            "rcon_password": "rcon.password"
+        }
+    }
+]

@@ -1,19 +1,42 @@
 [
     {
-        "UpdateStageName": "Create Server Directory",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "{{$FullBaseDir}}",
+        "UpdateStageName": "Download Linux Binary (x86_64)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSourceArchitecture": "x86_64",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceArgs": "pumpkin",
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": false
+    },
+    {
+        "UpdateStageName": "Download Linux Binary (ARM64)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSourceArchitecture": "aarch64",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceArgs": "pumpkin",
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": false
+    },
+    {
+        "UpdateStageName": "Make Binary Executable",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/chmod",
+        "UpdateSourceArgs": "+x {{$FullBaseDir}}pumpkin",
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Download Pumpkin (Auto-Arch)",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"ARCH=$(uname -m); if [[ $ARCH == 'aarch64' ]]; then URL='https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-ARM64-Linux'; else URL='https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Linux'; fi; echo Downloading $URL...; wget -q -O PumpkinServer $URL && chmod +x PumpkinServer\"",
+        "UpdateStageName": "Download Windows Binary",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/Pumpkin-MC/Pumpkin/releases/download/nightly/pumpkin-X64-Windows.exe",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceArgs": "Pumpkin.exe",
         "OverwriteExistingFiles": true,
-        "SkipOnFailure": false
+        "DeleteAfterExtract": false
     }
 ]
