@@ -1,49 +1,257 @@
 [
     {
-        "ConfigFile": "configuration.toml",
-        "AutoMap": true,
-        "Importable": true,
+        "ConfigFile": "config/configuration.toml",
+        "ConfigType": "kvp",
+        "ConfigFormat": "{0} = \"{1}\"",
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "config/configuration.toml",
+        "ConfigType": "kvp",
+        "ConfigFormat": "{0} = {1}",
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "config/features.toml",
         "ConfigType": "ini",
         "ConfigFormat": "{0} = \"{1}\"",
-        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$",
+        "Subsections": [
+            {
+                "Heading": "networking.rcon",
+                "SettingMappings": {
+                    "address": "rcon_address",
+                    "password": "rcon_password"
+                }
+            },
+            {
+                "Heading": "networking.proxy.velocity",
+                "SettingMappings": {
+                    "secret": "velocity_secret"
+                }
+            },
+            {
+                "Heading": "resource_pack",
+                "SettingMappings": {
+                    "url": "resource_pack_url",
+                    "sha1": "resource_pack_sha1",
+                    "prompt_message": "resource_pack_prompt_message"
+                }
+            },
+            {
+                "Heading": "chat",
+                "SettingMappings": {
+                    "format": "chat_format"
+                }
+            },
+            {
+                "Heading": "logging",
+                "SettingMappings": {
+                    "file": "logging_file",
+                    "level": "logging_level"
+                }
+            },
+            {
+                "Heading": "world.chunk.compression",
+                "SettingMappings": {
+                    "algorithm": "world_chunk_compression_algorithm"
+                }
+            },
+            {
+                "Heading": "server_links",
+                "SettingMappings": {
+                    "bug_report": "link_bug_report",
+                    "support": "link_support",
+                    "status": "link_status",
+                    "feedback": "link_feedback",
+                    "community": "link_community",
+                    "website": "link_website",
+                    "forums": "link_forums",
+                    "news": "link_news",
+                    "announcements": "link_announcements"
+                }
+            },
+            {
+                "Heading": "networking.query",
+                "SettingMappings": {
+                    "address": "query_address"
+                }
+            },
+            {
+                "Heading": "networking.authentication",
+                "SettingMappings": {
+                    "auth_url": "auth_url",
+                    "prevent_proxy_connection_auth_url": "auth_prevent_proxy_url"
+                }
+            }
+        ]
     },
     {
-        "ConfigFile": "configuration.toml",
-        "AutoMap": true,
-        "Importable": true,
+        "ConfigFile": "config/features.toml",
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
-    },
-    {
-        "ConfigFile": "features.toml",
-        "AutoMap": true,
-        "Importable": true,
-        "ConfigType": "ini",
-        "ConfigFormat": "{0} = \"{1}\"",
-        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
-    },
-    {
-        "ConfigFile": "features.toml",
-        "AutoMap": true,
-        "Importable": true,
-        "ConfigType": "ini",
-        "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
-    },
-    {
-        "ConfigFile": "features.toml",
-        "ConfigType": "ini",
-        "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$",
-        "Mappings": {
-            "use_console": "commands.use_console",
-            "log_console": "commands.log_console",
-            "default_op_level": "commands.default_op_level",
-            "pvp_enabled": "pvp.enabled",
-            "rcon_enabled": "rcon.enabled",
-            "rcon_address": "rcon.address",
-            "rcon_password": "rcon.password"
-        }
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"].*)$",
+        "Subsections": [
+            {
+                "Heading": "commands",
+                "SettingMappings": {
+                    "use_console": "use_console",
+                    "use_tty": "use_tty",
+                    "log_console": "log_console",
+                    "default_op_level": "default_op_level"
+                }
+            },
+            {
+                "Heading": "pvp",
+                "SettingMappings": {
+                    "enabled": "pvp_enabled",
+                    "hurt_animation": "pvp_hurt_animation",
+                    "protect_creative": "pvp_protect_creative",
+                    "knockback": "pvp_knockback",
+                    "swing": "pvp_swing"
+                }
+            },
+            {
+                "Heading": "networking.rcon",
+                "SettingMappings": {
+                    "enabled": "rcon_enabled",
+                    "max_connections": "rcon_max_connections"
+                }
+            },
+            {
+                "Heading": "networking.rcon.logging",
+                "SettingMappings": {
+                    "logged_successfully": "rcon_log_success",
+                    "wrong_password": "rcon_log_wrong_pass",
+                    "commands": "rcon_log_commands",
+                    "quit": "rcon_log_quit"
+                }
+            },
+            {
+                "Heading": "networking.proxy",
+                "SettingMappings": {
+                    "enabled": "proxy_enabled"
+                }
+            },
+            {
+                "Heading": "networking.proxy.velocity",
+                "SettingMappings": {
+                    "enabled": "velocity_enabled"
+                }
+            },
+            {
+                "Heading": "networking.proxy.bungeecord",
+                "SettingMappings": {
+                    "enabled": "bungeecord_enabled"
+                }
+            },
+            {
+                "Heading": "networking.authentication",
+                "SettingMappings": {
+                    "enabled": "auth_enabled",
+                    "connect_timeout": "auth_connect_timeout",
+                    "read_timeout": "auth_read_timeout",
+                    "prevent_proxy_connections": "prevent_proxy_connections"
+                }
+            },
+            {
+                "Heading": "networking.authentication.player_profile",
+                "SettingMappings": {
+                    "allow_banned_players": "auth_allow_banned",
+                    "allowed_actions": "auth_allowed_actions"
+                }
+            },
+            {
+                "Heading": "networking.authentication.textures",
+                "SettingMappings": {
+                    "enabled": "texture_filtering_enabled",
+                    "allowed_url_schemes": "auth_allowed_url_schemes",
+                    "allowed_url_domains": "auth_allowed_url_domains"
+                }
+            },
+            {
+                "Heading": "networking.authentication.textures.types",
+                "SettingMappings": {
+                    "skin": "texture_skin",
+                    "cape": "texture_cape",
+                    "elytra": "texture_elytra"
+                }
+            },
+            {
+                "Heading": "networking.packet_compression",
+                "SettingMappings": {
+                    "enabled": "compression_enabled",
+                    "threshold": "compression_threshold",
+                    "level": "compression_level"
+                }
+            },
+            {
+                "Heading": "networking.lan_broadcast",
+                "SettingMappings": {
+                    "enabled": "lan_broadcast_enabled",
+                    "port": "lan_broadcast_port"
+                }
+            },
+            {
+                "Heading": "resource_pack",
+                "SettingMappings": {
+                    "enabled": "resource_pack_enabled",
+                    "force": "resource_pack_force"
+                }
+            },
+            {
+                "Heading": "logging",
+                "SettingMappings": {
+                    "enabled": "logging_enabled",
+                    "env": "logging_env",
+                    "threads": "logging_threads",
+                    "color": "logging_color",
+                    "timestamp": "logging_timestamp"
+                }
+            },
+            {
+                "Heading": "world.chunk",
+                "SettingMappings": {
+                    "write_in_place": "world_write_in_place"
+                }
+            },
+            {
+                "Heading": "world.chunk.compression",
+                "SettingMappings": {
+                    "level": "world_chunk_compression_level"
+                }
+            },
+            {
+                "Heading": "player_data",
+                "SettingMappings": {
+                    "save_player_data": "save_player_data",
+                    "save_player_cron_interval": "save_player_cron_interval"
+                }
+            },
+            {
+                "Heading": "networking.query",
+                "SettingMappings": {
+                    "enabled": "query_enabled"
+                }
+            },
+            {
+                "Heading": "server_links",
+                "SettingMappings": {
+                    "enabled": "server_links_enabled"
+                }
+            },
+            {
+                "Heading": "server_links.custom",
+                "SettingMappings": {}
+            },
+            {
+                "Heading": "fun",
+                "SettingMappings": {
+                    "april_fools": "april_fools"
+                }
+            }
+        ]
     }
 ]

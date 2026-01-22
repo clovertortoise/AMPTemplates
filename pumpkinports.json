@@ -1,23 +1,23 @@
 [
     {
-        "Protocol": "TCP",
+        "Ref": "ServerPort",
+        "Name": "Java Edition Port",
+        "Description": "The main port for Java Edition players",
         "Port": 25565,
-        "Ref": "ApplicationPort1",
-        "Name": "Java Server Port",
-        "Description": "Port for Java Edition"
+        "Protocol": "TCP"
     },
     {
-        "Protocol": "UDP",
+        "Ref": "BedrockPort",
+        "Name": "Bedrock Edition Port",
+        "Description": "The port for Bedrock Edition players",
         "Port": 19132,
-        "Ref": "ApplicationPort2",
-        "Name": "Bedrock Server Port",
-        "Description": "Port for Bedrock Edition"
+        "Protocol": "UDP"
     },
     {
-        "Protocol": "TCP",
-        "Port": 25575,
         "Ref": "RemoteAdminPort",
         "Name": "RCON Port",
-        "Description": "Port for RCON"
+        "Description": "Port for Remote Console (RCON) connections",
+        "Port": 25575,
+        "Protocol": "TCP"
     }
 ]
