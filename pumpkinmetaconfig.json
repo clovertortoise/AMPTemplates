@@ -1,53 +1,17 @@
 [
     {
         "ConfigFile": "config/configuration.toml",
-        "ConfigType": "ini",
+        "ConfigType": "kvp",
         "ConfigFormat": "{0} = \"{1}\"",
         "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$",
-        "Subsections": [
-            {
-                "Heading": "",
-                "SettingMappings": {
-                    "motd": "motd",
-                    "favicon_path": "favicon_path",
-                    "java_edition_address": "java_edition_address",
-                    "bedrock_edition_address": "bedrock_edition_address",
-                    "default_difficulty": "default_difficulty",
-                    "default_gamemode": "default_gamemode",
-                    "default_level_name": "default_level_name",
-                    "seed": "seed"
-                }
-            }
-        ]
+        "AutoMap": true
     },
     {
         "ConfigFile": "config/configuration.toml",
-        "ConfigType": "ini",
+        "ConfigType": "kvp",
         "ConfigFormat": "{0} = {1}",
         "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
-        "Subsections": [
-            {
-                "Heading": "",
-                "SettingMappings": {
-                    "max_players": "max_players",
-                    "online_mode": "online_mode",
-                    "white_list": "white_list",
-                    "enforce_whitelist": "enforce_whitelist",
-                    "use_favicon": "use_favicon",
-                    "op_permission_level": "op_permission_level",
-                    "java_edition": "java_edition",
-                    "bedrock_edition": "bedrock_edition",
-                    "force_gamemode": "force_gamemode",
-                    "allow_nether": "allow_nether",
-                    "hardcore": "hardcore",
-                    "view_distance": "view_distance",
-                    "simulation_distance": "simulation_distance",
-                    "tps": "tps",
-                    "encryption": "encryption",
-                    "allow_chat_reports": "allow_chat_reports"
-                }
-            }
-        ]
+        "AutoMap": true
     },
     {
         "ConfigFile": "config/features.toml",
