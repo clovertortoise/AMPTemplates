@@ -1,16 +1,18 @@
 [
     {
-        "Description": "Linux Fix (Fails on Windows)",
-        "Command": "sed",
-        "Arguments": "-i '1s/^\\[\\]$//' config/configuration.toml",
-        "RunInBackground": false,
+        "UpdateStageName": "Fix TOML Formatting (Linux)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"if [ -f config/configuration.toml ]; then sed -i 's/^\\[\\] //g' config/configuration.toml; fi\"",
         "SkipOnFailure": true
     },
     {
-        "Description": "Windows Fix (Fails on Linux)",
-        "Command": "powershell",
-        "Arguments": "-NoProfile -Command \"$p='config\\configuration.toml'; if (Test-Path $p) { $c=Get-Content $p; if ($c[0] -eq '[]') { $c | Select-Object -Skip 1 | Set-Content $p } }\"",
-        "RunInBackground": false,
+        "UpdateStageName": "Fix TOML Formatting (Windows)",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "powershell.exe",
+        "UpdateSourceArgs": "-NoProfile -Command \"$p='config\\configuration.toml'; if (Test-Path $p) { (Get-Content $p) -replace '^\\[\\] ', '' | Set-Content $p }\"",
         "SkipOnFailure": true
     }
 ]
