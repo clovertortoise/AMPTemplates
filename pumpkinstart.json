@@ -1,0 +1,16 @@
+[
+    {
+        "Description": "Linux Fix (Fails on Windows)",
+        "Command": "sed",
+        "Arguments": "-i '1s/^\\[\\]$//' config/configuration.toml",
+        "RunInBackground": false,
+        "SkipOnFailure": true
+    },
+    {
+        "Description": "Windows Fix (Fails on Linux)",
+        "Command": "powershell",
+        "Arguments": "-NoProfile -Command \"$p='config\\configuration.toml'; if (Test-Path $p) { $c=Get-Content $p; if ($c[0] -eq '[]') { $c | Select-Object -Skip 1 | Set-Content $p } }\"",
+        "RunInBackground": false,
+        "SkipOnFailure": true
+    }
+]
