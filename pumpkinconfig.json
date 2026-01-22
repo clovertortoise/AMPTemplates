@@ -262,11 +262,11 @@
         "DisplayName": "LAN Broadcast Port",
         "Category": "Minecraft Settings",
         "Subcategory": "Networking",
-        "Description": "The port to use for LAN broadcasting. (Default: 46733)",
+        "Description": "The port to use for LAN broadcasting. (Default: {{$ServerPort}})",
         "Keywords": "lan broadcast port",
         "FieldName": "lan_broadcast_port",
-        "InputType": "number",
-        "DefaultValue": 46733,
+        "InputType": "text",
+        "DefaultValue": "{{$ServerPort}}",
         "IncludeInCommandLine": false
     },
     {
@@ -509,11 +509,11 @@
         "DisplayName": "Seed",
         "Category": "Minecraft Settings",
         "Subcategory": "Gameplay",
-        "Description": "The world generation seed (empty for random). (Default: 1768245843390242324)",
+        "Description": "The world generation seed (empty for random). (Default: empty)",
         "Keywords": "seed generator",
         "FieldName": "seed",
         "InputType": "text",
-        "DefaultValue": "1768245843390242324",
+        "DefaultValue": "",
         "IncludeInCommandLine": false
     },
     {
@@ -598,27 +598,27 @@
         "DisplayName": "View Distance",
         "Category": "Minecraft Settings",
         "Subcategory": "Performance",
-        "Description": "The maximum view distance for players in chunks. (Default: 10)",
+        "Description": "The maximum view distance for players in chunks. (Default: 12)",
         "Keywords": "view distance chunks",
         "FieldName": "view_distance",
         "InputType": "number",
-        "DefaultValue": 10,
+        "DefaultValue": 12,
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Simulation Distance",
         "Category": "Minecraft Settings",
         "Subcategory": "Performance",
-        "Description": "The maximum simulation distance for players in chunks. (Default: 10)",
+        "Description": "The maximum simulation distance for players in chunks. (Default: 4)",
         "Keywords": "simulation distance chunks",
         "FieldName": "simulation_distance",
         "InputType": "number",
-        "DefaultValue": 10,
+        "DefaultValue": 4,
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Target TPS",
-        "Category": "Pumpkin Settings",
+        "Category": "Minecraft Settings",
         "Subcategory": "Performance",
         "Description": "The server's target tick rate. (Default: 20.0)",
         "Keywords": "tps tick rate",
@@ -656,7 +656,7 @@
         "IncludeInCommandLine": false
     },
     {
-        "DisplayName": "Compression Level",
+        "DisplayName": "Packet Compression Level",
         "Category": "Minecraft Settings",
         "Subcategory": "Performance",
         "Description": "Zlib compression level. (Default: 4, Min: 0, Max: 9)",
@@ -1241,6 +1241,17 @@
             "False": "false",
             "True": "true"
         },
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Chat Format",
+        "Category": "Minecraft Settings",
+        "Subcategory": "Chat",
+        "Description": "Format for chat messages. Use <{DISPLAYNAME}> and {MESSAGE} (Default: <{DISPLAYNAME}> {MESSAGE})",
+        "Keywords": "chat format",
+        "FieldName": "chat_format",
+        "InputType": "text",
+        "DefaultValue": "<{DISPLAYNAME}> {MESSAGE}",
         "IncludeInCommandLine": false
     },
     {
