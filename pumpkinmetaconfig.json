@@ -10,7 +10,7 @@
         "ConfigFile": "config/configuration.toml",
         "ConfigType": "kvp",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"].*)$",
+        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$",
         "AutoMap": true
     },
     {
