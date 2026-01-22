@@ -1217,11 +1217,11 @@
         "DisplayName": "Use TTY",
         "Category": "Pumpkin Settings",
         "Subcategory": "Console",
-        "Description": "Use TTY for console input. (Default: true)",
+        "Description": "Use TTY for console input. (Default: false)",
         "Keywords": "tty console",
         "FieldName": "use_tty",
         "InputType": "checkbox",
-        "DefaultValue": "true",
+        "DefaultValue": "false",
         "EnumValues": {
             "False": "false",
             "True": "true"
