@@ -44,7 +44,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/sh",
-        "UpdateSourceArgs": "-c \"touch {{$FullBaseDir}}config/configuration.toml\"",
+        "UpdateSourceArgs": "-c \"mkdir -p {{$FullBaseDir}}config && touch {{$FullBaseDir}}config/configuration.toml\"",
         "SkipOnFailure": true
     },
     {
