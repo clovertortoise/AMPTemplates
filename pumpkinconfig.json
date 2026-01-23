@@ -3,11 +3,11 @@
         "DisplayName": "Message of the Day",
         "Category": "Minecraft Settings",
         "Subcategory": "General",
-        "Description": "Message of the Day; the server's description displayed on the status screen. (Default: A blazingly fast Pumpkin server!)",
+        "Description": "Message of the Day; the server's description displayed on the status screen.",
         "Keywords": "motd description",
         "FieldName": "motd",
         "InputType": "text",
-        "DefaultValue": "A blazingly fast Pumpkin server!",
+        "DefaultValue": "\"A blazingly fast Pumpkin server!\"",
         "IncludeInCommandLine": false
     },
     {
@@ -85,11 +85,11 @@
         "DisplayName": "Favicon Path",
         "Category": "Minecraft Settings",
         "Subcategory": "General",
-        "Description": "Path to the server icon file. (Default: icon.png)",
+        "Description": "Path to the server icon file. (Default: \"icon.png\")",
         "Keywords": "favicon path",
         "FieldName": "favicon_path",
         "InputType": "text",
-        "DefaultValue": "icon.png",
+        "DefaultValue": "\"icon.png\"",
         "IncludeInCommandLine": false
     },
     {
@@ -118,11 +118,11 @@
         "DisplayName": "Java Address",
         "Category": "Minecraft Settings",
         "Subcategory": "Networking",
-        "Description": "The address to bind the Java Edition server to. Managed by AMP. (Default: {{$ApplicationIPBinding}}:{{$ServerPort}})",
+        "Description": "The address to bind the Java Edition server to. Managed by AMP. (Default: \"{{$ApplicationIPBinding}}:{{$ServerPort}}\")",
         "Keywords": "ip port java address",
         "FieldName": "java_edition_address",
         "InputType": "text",
-        "DefaultValue": "{{$ApplicationIPBinding}}:{{$ServerPort}}",
+        "DefaultValue": "\"{{$ApplicationIPBinding}}:{{$ServerPort}}\"",
         "ReadOnly": true,
         "IncludeInCommandLine": false
     },
@@ -130,11 +130,11 @@
         "DisplayName": "Bedrock Address",
         "Category": "Minecraft Settings",
         "Subcategory": "Networking",
-        "Description": "The address to bind the Bedrock Edition server to. Managed by AMP. (Default: {{$ApplicationIPBinding}}:{{$BedrockPort}})",
+        "Description": "The address to bind the Bedrock Edition server to. Managed by AMP. (Default: \"{{$ApplicationIPBinding}}:{{$BedrockPort}}\")",
         "Keywords": "ip port bedrock address",
         "FieldName": "bedrock_edition_address",
         "InputType": "text",
-        "DefaultValue": "{{$ApplicationIPBinding}}:{{$BedrockPort}}",
+        "DefaultValue": "\"{{$ApplicationIPBinding}}:{{$BedrockPort}}\"",
         "ReadOnly": true,
         "IncludeInCommandLine": false
     },
@@ -187,11 +187,11 @@
         "DisplayName": "Query Address",
         "Category": "Minecraft Settings",
         "Subcategory": "Networking",
-        "Description": "The address for the Query listener. Leave empty to use the main server port. (Default: {{$ApplicationIPBinding}}:{{$ServerPort}})",
+        "Description": "The address for the Query listener. Leave empty to use the main server port. (Default: \"{{$ApplicationIPBinding}}:{{$ServerPort}}\")",
         "Keywords": "query address",
         "FieldName": "query_address",
         "InputType": "text",
-        "DefaultValue": "{{$ApplicationIPBinding}}:{{$ServerPort}}",
+        "DefaultValue": "\"{{$ApplicationIPBinding}}:{{$ServerPort}}\"",
         "IncludeInCommandLine": false
     },
     {
@@ -213,11 +213,11 @@
         "DisplayName": "RCON Address",
         "Category": "Minecraft Settings",
         "Subcategory": "Networking",
-        "Description": "The address and port that RCON should listen to. Managed by AMP. (Default: {{$ApplicationIPBinding}}:{{$RemoteAdminPort}})",
+        "Description": "The address and port that RCON should listen to. Managed by AMP. (Default: \"{{$ApplicationIPBinding}}:{{$RemoteAdminPort}}\")",
         "Keywords": "rcon address",
         "FieldName": "rcon_address",
         "InputType": "text",
-        "DefaultValue": "{{$ApplicationIPBinding}}:{{$RemoteAdminPort}}",
+        "DefaultValue": "\"{{$ApplicationIPBinding}}:{{$RemoteAdminPort}}\"",
         "ReadOnly": true,
         "IncludeInCommandLine": false
     },
@@ -229,7 +229,7 @@
         "Keywords": "rcon password",
         "FieldName": "rcon_password",
         "InputType": "password",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
@@ -307,7 +307,7 @@
         "Keywords": "velocity secret",
         "FieldName": "velocity_secret",
         "InputType": "password",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
@@ -349,12 +349,12 @@
         "FieldName": "default_difficulty",
         "InputType": "enum",
         "EnumValues": {
-            "Peaceful": "Peaceful",
-            "Easy": "Easy",
-            "Normal": "Normal",
-            "Hard": "Hard"
+            "Peaceful": "\"Peaceful\"",
+            "Easy": "\"Easy\"",
+            "Normal": "\"Normal\"",
+            "Hard": "\"Hard\""
         },
-        "DefaultValue": "Easy",
+        "DefaultValue": "\"Easy\"",
         "IncludeInCommandLine": false
     },
     {
@@ -366,12 +366,12 @@
         "FieldName": "default_gamemode",
         "InputType": "enum",
         "EnumValues": {
-            "Survival": "Survival",
-            "Creative": "Creative",
-            "Adventure": "Adventure",
-            "Spectator": "Spectator"
+            "Survival": "\"Survival\"",
+            "Creative": "\"Creative\"",
+            "Adventure": "\"Adventure\"",
+            "Spectator": "\"Spectator\""
         },
-        "DefaultValue": "Survival",
+        "DefaultValue": "\"Survival\"",
         "IncludeInCommandLine": false
     },
     {
@@ -502,18 +502,18 @@
         "Keywords": "world level map",
         "FieldName": "default_level_name",
         "InputType": "text",
-        "DefaultValue": "world",
+        "DefaultValue": "\"world\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Seed",
         "Category": "Minecraft Settings",
         "Subcategory": "Gameplay",
-        "Description": "The world generation seed (empty for random). (Default: empty)",
+        "Description": "The world generation seed (empty for random).",
         "Keywords": "seed generator",
         "FieldName": "seed",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
@@ -550,33 +550,33 @@
         "DisplayName": "Resource Pack URL",
         "Category": "Minecraft Settings",
         "Subcategory": "Resource Pack",
-        "Description": "URL to download the resource pack. (Default: empty)",
+        "Description": "URL to download the resource pack.",
         "Keywords": "resource pack url",
         "FieldName": "resource_pack_url",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Resource Pack SHA1",
         "Category": "Minecraft Settings",
         "Subcategory": "Resource Pack",
-        "Description": "SHA1 hash of the resource pack. (Default: empty)",
+        "Description": "SHA1 hash of the resource pack.",
         "Keywords": "resource pack sha1",
         "FieldName": "resource_pack_sha1",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Resource Pack Prompt",
         "Category": "Minecraft Settings",
         "Subcategory": "Resource Pack",
-        "Description": "Message shown when prompting for resource pack. (Default: empty)",
+        "Description": "Message shown when prompting for resource pack.",
         "Keywords": "resource pack prompt",
         "FieldName": "resource_pack_prompt_message",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
@@ -668,6 +668,21 @@
         "Max": 9,
         "IncludeInCommandLine": false
     },
+{
+        "DisplayName": "World Chunk Type",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Performance",
+        "Description": "The chunk storage format. (Default: Anvil)",
+        "Keywords": "world chunk type anvil linear",
+        "FieldName": "world_chunk_type",
+        "InputType": "enum",
+        "EnumValues": {
+            "Anvil": "\"anvil\"",
+            "Linear": "\"linear\""
+        },
+        "DefaultValue": "\"anvil\"",
+        "IncludeInCommandLine": false
+    },
     {
         "DisplayName": "World Compression Algorithm",
         "Category": "Pumpkin Settings",
@@ -677,12 +692,12 @@
         "FieldName": "world_chunk_compression_algorithm",
         "InputType": "enum",
         "EnumValues": {
-            "LZ4": "LZ4",
-            "Gzip": "Gzip",
-            "Zlib": "Zlib",
-            "None": "None"
+            "LZ4": "\"LZ4\"",
+            "Gzip": "\"Gzip\"",
+            "Zlib": "\"Zlib\"",
+            "None": "\"None\""
         },
-        "DefaultValue": "LZ4",
+        "DefaultValue": "\"LZ4\"",
         "IncludeInCommandLine": false
     },
     {
@@ -771,22 +786,22 @@
         "DisplayName": "Auth URL",
         "Category": "Pumpkin Settings",
         "Subcategory": "Advanced",
-        "Description": "The URL to authenticate with. Uses Mojang's session servers if not specified. (Default: empty)",
+        "Description": "The URL to authenticate with. Uses Mojang's session servers if not specified.",
         "Keywords": "auth url",
         "FieldName": "auth_url",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Auth Prevent Proxy URL",
         "Category": "Pumpkin Settings",
         "Subcategory": "Advanced",
-        "Description": "The URL to authenticate with if prevent_proxy_connections is enabled. (Default: empty)",
+        "Description": "The URL to authenticate with if prevent_proxy_connections is enabled. Uses Mojang's session servers if not specified.",
         "Keywords": "auth url proxy",
         "FieldName": "auth_prevent_proxy_url",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
@@ -830,7 +845,7 @@
         "DisplayName": "Auth Allowed Actions",
         "Category": "Pumpkin Settings",
         "Subcategory": "Advanced",
-        "Description": "Actions allowed for banned players. Keep format: [\"ACTION1\", \"ACTION2\"] (Default: [\"FORCED_NAME_CHANGE\", \"USING_BANNED_SKIN\"])",
+        "Description": "Actions allowed for banned players. Keep default format: [\"FORCED_NAME_CHANGE\", \"USING_BANNED_SKIN\"]",
         "Keywords": "auth actions banned",
         "FieldName": "auth_allowed_actions",
         "InputType": "text",
@@ -901,7 +916,7 @@
         "DisplayName": "Auth Allowed URL Schemes",
         "Category": "Pumpkin Settings",
         "Subcategory": "Advanced",
-        "Description": "Allowed URL schemes for textures. Keep format: [\"http\", \"https\"] (Default: [\"http\", \"https\"])",
+        "Description": "Allowed URL schemes for textures. Keep default format: [\"http\", \"https\"]",
         "Keywords": "auth url schemes",
         "FieldName": "auth_allowed_url_schemes",
         "InputType": "text",
@@ -912,7 +927,7 @@
         "DisplayName": "Auth Allowed URL Domains",
         "Category": "Pumpkin Settings",
         "Subcategory": "Advanced",
-        "Description": "Allowed URL domains for textures. Keep format: [\"domain1\", \"domain2\"] (Default: [\".minecraft.net\", \".mojang.com\"])",
+        "Description": "Allowed URL domains for textures. Keep default format: [\".minecraft.net\", \".mojang.com\"]",
         "Keywords": "auth url domains",
         "FieldName": "auth_allowed_url_domains",
         "InputType": "text",
@@ -938,11 +953,11 @@
         "DisplayName": "Log File",
         "Category": "Pumpkin Settings",
         "Subcategory": "Logging",
-        "Description": "Name of the log file. (Default: latest.log)",
+        "Description": "Name of the log file. (Default: \"latest.log\")",
         "Keywords": "log file",
         "FieldName": "logging_file",
         "InputType": "text",
-        "DefaultValue": "latest.log",
+        "DefaultValue": "\"latest.log\"",
         "IncludeInCommandLine": false
     },
     {
@@ -954,14 +969,14 @@
         "FieldName": "logging_level",
         "InputType": "enum",
         "EnumValues": {
-            "Off": "Off",
-            "Error": "Error",
-            "Warn": "Warn",
-            "Info": "Info",
-            "Debug": "Debug",
-            "Trace": "Trace"
+            "Off": "\"Off\"",
+            "Error": "\"Error\"",
+            "Warn": "\"Warn\"",
+            "Info": "\"Info\"",
+            "Debug": "\"Debug\"",
+            "Trace": "\"Trace\""
         },
-        "DefaultValue": "Info",
+        "DefaultValue": "\"Info\"",
         "IncludeInCommandLine": false
     },
     {
@@ -1085,6 +1100,21 @@
         "IncludeInCommandLine": false
     },
     {
+        "DisplayName": "IP Scrubbing",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Logging",
+        "Description": "Whether to scrub IP addresses from log files. (Default: true)",
+        "Keywords": "security ip log scrub",
+        "FieldName": "scrub_ips",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
         "DisplayName": "Server Links Enabled",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
@@ -1103,99 +1133,99 @@
         "DisplayName": "Bug Report Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for bug reports (Default: https://github.com/Pumpkin-MC/Pumpkin/issues)",
+        "Description": "Link for bug reports (Default: \"https://github.com/Pumpkin-MC/Pumpkin/issues\")",
         "Keywords": "link bug report",
         "FieldName": "link_bug_report",
         "InputType": "text",
-        "DefaultValue": "https://github.com/Pumpkin-MC/Pumpkin/issues",
+        "DefaultValue": "\"https://github.com/Pumpkin-MC/Pumpkin/issues\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Support Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for support (Default: empty)",
+        "Description": "Link for support",
         "Keywords": "link support",
         "FieldName": "link_support",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Status Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for server status (Default: empty)",
+        "Description": "Link for server status",
         "Keywords": "link status",
         "FieldName": "link_status",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Feedback Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for feedback (Default: empty)",
+        "Description": "Link for feedback",
         "Keywords": "link feedback",
         "FieldName": "link_feedback",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Community Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for community (Default: empty)",
+        "Description": "Link for community",
         "Keywords": "link community",
         "FieldName": "link_community",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Website Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for website (Default: empty)",
+        "Description": "Link for website",
         "Keywords": "link website",
         "FieldName": "link_website",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Forums Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for forums (Default: empty)",
+        "Description": "Link for forums",
         "Keywords": "link forums",
         "FieldName": "link_forums",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "News Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for news (Default: empty)",
+        "Description": "Link for news",
         "Keywords": "link news",
         "FieldName": "link_news",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
         "DisplayName": "Announcements Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
-        "Description": "Link for announcements (Default: empty)",
+        "Description": "Link for announcements",
         "Keywords": "link announcements",
         "FieldName": "link_announcements",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "\"\"",
         "IncludeInCommandLine": false
     },
     {
@@ -1247,11 +1277,11 @@
         "DisplayName": "Chat Format",
         "Category": "Minecraft Settings",
         "Subcategory": "Chat",
-        "Description": "Format for chat messages. Use <{DISPLAYNAME}> and {MESSAGE} (Default: <{DISPLAYNAME}> {MESSAGE})",
+        "Description": "Format for chat messages. Use <{DISPLAYNAME}> and {MESSAGE} (Default: \"<{DISPLAYNAME}> {MESSAGE}\")",
         "Keywords": "chat format",
         "FieldName": "chat_format",
         "InputType": "text",
-        "DefaultValue": "<{DISPLAYNAME}> {MESSAGE}",
+        "DefaultValue": "\"<{DISPLAYNAME}> {MESSAGE}\"",
         "IncludeInCommandLine": false
     },
     {
