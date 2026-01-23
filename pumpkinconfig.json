@@ -688,8 +688,8 @@
         "FieldName": "world_chunk_type",
         "InputType": "enum",
         "EnumValues": {
-            "Anvil": "'anvil'",
-            "Linear": "'linear'"
+            "'anvil'": "'anvil'",
+            "'linear'": "'linear'"
         },
         "DefaultValue": "'anvil'",
         "IncludeInCommandLine": false
@@ -703,10 +703,10 @@
         "FieldName": "world_chunk_compression_algorithm",
         "InputType": "enum",
         "EnumValues": {
-            "LZ4": "'LZ4'",
-            "Gzip": "'Gzip'",
-            "Zlib": "'Zlib'",
-            "None": "'None'"
+            "'LZ4'": "'LZ4'",
+            "'Gzip'": "'Gzip'",
+            "'Zlib'": "'Zlib'",
+            "'None'": "'None'"
         },
         "DefaultValue": "'LZ4'",
         "IncludeInCommandLine": false
@@ -983,12 +983,12 @@
         "FieldName": "logging_level",
         "InputType": "enum",
         "EnumValues": {
-            "Off": "'Off'",
-            "Error": "'Error'",
-            "Warn": "'Warn'",
-            "Info": "'Info'",
-            "Debug": "'Debug'",
-            "Trace": "'Trace'"
+            "'Off'": "'Off'",
+            "'Error'": "'Error'",
+            "'Warn'": "'Warn'",
+            "'Info'": "'Info'",
+            "'Debug'": "'Debug'",
+            "'Trace'": "'Trace'"
         },
         "DefaultValue": "'Info'",
         "IncludeInCommandLine": false
