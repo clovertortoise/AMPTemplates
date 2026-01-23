@@ -669,6 +669,17 @@
         "IncludeInCommandLine": false
     },
     {
+        "DisplayName": "World Chunk Type",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Performance",
+        "Description": "The chunk storage format. (Default: \"anvil\")",
+        "Keywords": "world chunk type anvil",
+        "FieldName": "world_chunk_type",
+        "InputType": "text",
+        "DefaultValue": "\"anvil\"",
+        "IncludeInCommandLine": false
+    },
+    {
         "DisplayName": "World Compression Algorithm",
         "Category": "Pumpkin Settings",
         "Subcategory": "Performance",

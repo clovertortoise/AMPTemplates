@@ -148,7 +148,8 @@
             {
                 "Heading": "world.chunk",
                 "SettingMappings": {
-                    "write_in_place": "world_write_in_place"
+                    "write_in_place": "world_write_in_place",
+                    "type": "world_chunk_type"
                 }
             },
             {
