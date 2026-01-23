@@ -1100,6 +1100,21 @@
         "IncludeInCommandLine": false
     },
     {
+        "DisplayName": "IP Scrubbing",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Logging",
+        "Description": "Whether to scrub IP addresses from log files. (Default: true)",
+        "Keywords": "security ip log scrub",
+        "FieldName": "scrub_ips",
+        "InputType": "checkbox",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        },
+        "IncludeInCommandLine": false
+    },
+    {
         "DisplayName": "Server Links Enabled",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
