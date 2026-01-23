@@ -235,8 +235,8 @@
         "Description": "The password to use for RCON authentication.",
         "Keywords": "rcon password",
         "FieldName": "rcon_password",
-        "InputType": "randompassword",
-        "DefaultValue": "''",
+        "InputType": "text",
+        "DefaultValue": "'@djustThyPa$$!'",
         "IncludeInCommandLine": false
     },
     {
@@ -313,7 +313,7 @@
         "Description": "The secret as configured in Velocity.",
         "Keywords": "velocity secret",
         "FieldName": "velocity_secret",
-        "InputType": "password",
+        "InputType": "text",
         "DefaultValue": "''",
         "IncludeInCommandLine": false
     },
@@ -663,6 +663,7 @@
         "FieldName": "compression_threshold",
         "InputType": "number",
         "DefaultValue": 256,
+        "Suffix": "kb",
         "Min": 0,
         "Max": 1024,
         "IncludeInCommandLine": false
@@ -693,6 +694,21 @@
             "'linear'": "'linear'"
         },
         "DefaultValue": "'anvil'",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Linear Version",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Performance",
+        "Description": "Version for the linear format. Only used when World Chunk Type is Linear (Default: V1)",
+        "Keywords": "world chunk type anvil linear",
+        "FieldName": "linear_version",
+        "InputType": "enum",
+        "EnumValues": {
+            "'V1'": "'V1'"
+        },
+        "DefaultValue": "'V1'",
+        "Hidden": true,
         "IncludeInCommandLine": false
     },
     {
@@ -1292,7 +1308,7 @@
         "DisplayName": "Chat Format",
         "Category": "Minecraft Settings",
         "Subcategory": "Chat",
-        "Description": "Format for chat messages. Use <{DISPLAYNAME}> and {MESSAGE} (Default: '<{DISPLAYNAME}> {MESSAGE}')",
+        "Description": "Format for chat messages. (Default: '<{DISPLAYNAME}> {MESSAGE}' ) ",
         "Keywords": "chat format",
         "FieldName": "chat_format",
         "InputType": "text",
