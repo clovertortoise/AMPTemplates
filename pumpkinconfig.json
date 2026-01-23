@@ -193,11 +193,12 @@
         "DisplayName": "Query Address",
         "Category": "Minecraft Settings",
         "Subcategory": "Networking",
-        "Description": "The address for the Query listener. Leave empty to use the main server port. (Default: 'IP:Port')",
+        "Description": "The address for the Query listener. Leave empty to use the main server port. (Format: 'IP:Port') ",
         "Keywords": "query address",
         "FieldName": "query_address",
         "InputType": "text",
-        "DefaultValue": "''",
+        "DefaultValue": "'{{$ApplicationIPBinding}}:{{$ServerPort}}'",
+        "Hidden": true,
         "IncludeInCommandLine": false
     },
     {
@@ -272,7 +273,7 @@
         "Keywords": "lan broadcast port",
         "FieldName": "lan_broadcast_port",
         "InputType": "text",
-        "DefaultValue": "",
+        "DefaultValue": "0",
         "IncludeInCommandLine": false
     },
     {
@@ -355,10 +356,10 @@
         "FieldName": "default_difficulty",
         "InputType": "enum",
         "EnumValues": {
-            "Peaceful": "'Peaceful'",
-            "Easy": "'Easy'",
-            "Normal": "'Normal'",
-            "Hard": "'Hard'"
+            "'Peaceful'": "'Peaceful'",
+            "'Easy'": "'Easy'",
+            "'Normal'": "'Normal'",
+            "'Hard'": "'Hard'"
         },
         "DefaultValue": "'Easy'",
         "IncludeInCommandLine": false
@@ -372,10 +373,10 @@
         "FieldName": "default_gamemode",
         "InputType": "enum",
         "EnumValues": {
-            "Survival": "'Survival'",
-            "Creative": "'Creative'",
-            "Adventure": "'Adventure'",
-            "Spectator": "'Spectator'"
+            "'Survival'": "'Survival'",
+            "'Creative'": "'Creative'",
+            "'Adventure'": "'Adventure'",
+            "'Spectator'": "'Spectator'"
         },
         "DefaultValue": "'Survival'",
         "IncludeInCommandLine": false
