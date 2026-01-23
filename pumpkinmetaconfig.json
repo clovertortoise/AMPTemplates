@@ -4,7 +4,38 @@
         "ConfigType": "kvp",
         "ConfigFormat": "{0} = {1}",
         "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>.*?)$",
-        "AutoMap": true
+        "Subsections": [
+            {
+                "Heading": "",
+                "SettingMappings": {
+                    "java_edition": "java_edition",
+                    "java_edition_address": "java_edition_address",
+                    "bedrock_edition": "bedrock_edition",
+                    "bedrock_edition_address": "bedrock_edition_address",
+                    "seed": "seed",
+                    "max_players": "max_players",
+                    "view_distance": "view_distance",
+                    "simulation_distance": "simulation_distance",
+                    "default_difficulty": "default_difficulty",
+                    "op_permission_level": "op_permission_level",
+                    "allow_nether": "allow_nether",
+                    "hardcore": "hardcore",
+                    "online_mode": "online_mode",
+                    "encryption": "encryption",
+                    "motd": "motd",
+                    "tps": "tps",
+                    "default_gamemode": "default_gamemode",
+                    "force_gamemode": "force_gamemode",
+                    "scrub_ips": "scrub_ips",
+                    "use_favicon": "use_favicon",
+                    "favicon_path": "favicon_path",
+                    "default_level_name": "default_level_name",
+                    "allow_chat_reports": "allow_chat_reports",
+                    "white_list": "white_list",
+                    "enforce_whitelist": "enforce_whitelist"
+                }
+            }
+        ]
     },
     {
         "ConfigFile": "config/features.toml",
