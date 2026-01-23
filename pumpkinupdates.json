@@ -38,21 +38,5 @@
         "UpdateSourceArgs": "Pumpkin.exe",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": false
-    },
-    {
-        "UpdateStageName": "Create Config Placeholder (Linux)",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/sh",
-        "UpdateSourceArgs": "-c \"mkdir -p {{$FullBaseDir}}config && touch {{$FullBaseDir}}config/configuration.toml\"",
-        "SkipOnFailure": true
-    },
-    {
-        "UpdateStageName": "Create Config Placeholder (Windows)",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/c if not exist \"{{$FullBaseDir}}config\\configuration.toml\" type nul > \"{{$FullBaseDir}}config\\configuration.toml\"",
-        "SkipOnFailure": true
     }
 ]

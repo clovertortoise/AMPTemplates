@@ -668,14 +668,18 @@
         "Max": 9,
         "IncludeInCommandLine": false
     },
-    {
+{
         "DisplayName": "World Chunk Type",
         "Category": "Pumpkin Settings",
         "Subcategory": "Performance",
-        "Description": "The chunk storage format. (Default: \"anvil\")",
-        "Keywords": "world chunk type anvil",
+        "Description": "The chunk storage format. (Default: Anvil)",
+        "Keywords": "world chunk type anvil linear",
         "FieldName": "world_chunk_type",
-        "InputType": "text",
+        "InputType": "enum",
+        "EnumValues": {
+            "Anvil": "\"anvil\"",
+            "Linear": "\"linear\""
+        },
         "DefaultValue": "\"anvil\"",
         "IncludeInCommandLine": false
     },
