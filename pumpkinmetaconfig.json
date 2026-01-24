@@ -222,7 +222,10 @@
             },
             {
                 "Heading": "server_links.custom",
-                "SettingMappings": {}
+                "SettingMappings": {
+                    "label": "server_links.custom.label",
+                    "url": "server_links.custom.url"
+                }
             },
             {
                 "Heading": "fun",

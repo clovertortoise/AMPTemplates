@@ -721,9 +721,9 @@
         "InputType": "enum",
         "EnumValues": {
             "'LZ4'": "'LZ4'",
-            "'Gzip'": "'Gzip'",
+            "'GZip'": "'GZip'",
             "'Zlib'": "'Zlib'",
-            "'None'": "'None'"
+            "'Custom'": "'Custom'"
         },
         "DefaultValue": "'LZ4'",
         "IncludeInCommandLine": false
@@ -1257,6 +1257,28 @@
         "FieldName": "link_announcements",
         "InputType": "text",
         "DefaultValue": "''",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Custom Link Label",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Server Links",
+        "Description": "The text displayed for the link. (e.g. 'Discord' ) ",
+        "Keywords": "custom link label",
+        "FieldName": "server_links.custom.label",
+        "InputType": "text",
+        "DefaultValue": "'Discord'",
+        "IncludeInCommandLine": false
+    },
+    {
+        "DisplayName": "Custom Link URL",
+        "Category": "Pumpkin Settings",
+        "Subcategory": "Server Links",
+        "Description": "The URL for the link. (e.g. 'https://discord.gg/pumpkin' ) ",
+        "Keywords": "custom link url",
+        "FieldName": "server_links.custom.url",
+        "InputType": "text",
+        "DefaultValue": "'https://discord.gg/pumpkin'",
         "IncludeInCommandLine": false
     },
     {
