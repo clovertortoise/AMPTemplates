@@ -1260,18 +1260,7 @@
         "IncludeInCommandLine": false
     },
     {
-        "DisplayName": "Custom Link Label",
-        "Category": "Pumpkin Settings",
-        "Subcategory": "Server Links",
-        "Description": "The text displayed for the link. (e.g. 'Discord' ) ",
-        "Keywords": "custom link label",
-        "FieldName": "server_links.custom.label",
-        "InputType": "text",
-        "DefaultValue": "'Discord'",
-        "IncludeInCommandLine": false
-    },
-    {
-        "DisplayName": "Custom Link URL",
+        "DisplayName": "Custom Link",
         "Category": "Pumpkin Settings",
         "Subcategory": "Server Links",
         "Description": "The URL for the link. (e.g. 'https://discord.gg/pumpkin' ) ",
