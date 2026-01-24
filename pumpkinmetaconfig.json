@@ -180,6 +180,7 @@
                 "Heading": "world.chunk",
                 "SettingMappings": {
                     "write_in_place": "world_write_in_place",
+                    "linear_version": "linear_version",
                     "type": "world_chunk_type"
                 }
             },
@@ -221,7 +222,9 @@
             },
             {
                 "Heading": "server_links.custom",
-                "SettingMappings": {}
+                "SettingMappings": {
+                    "Discord": "server_links.custom.url"
+                }
             },
             {
                 "Heading": "fun",
