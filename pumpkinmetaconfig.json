@@ -223,7 +223,7 @@
             {
                 "Heading": "server_links.custom",
                 "SettingMappings": {
-                    "Discord": "server_links.custom.url"
+                    "url": "server_links.custom.url"
                 }
             },
             {
