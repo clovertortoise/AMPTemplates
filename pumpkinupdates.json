@@ -43,7 +43,7 @@
         "UpdateStageName": "Download Config Files",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/maint/configuration.toml",
+        "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/test/configuration.toml",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": false
@@ -52,7 +52,7 @@
         "UpdateStageName": "Download Config Files",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/maint/features.toml",
+        "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/test/features.toml",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": false
