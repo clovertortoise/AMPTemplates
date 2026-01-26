@@ -223,7 +223,7 @@
             {
                 "Heading": "server_links.custom",
                 "SettingMappings": {
-                    "url": "server_links.custom.url"
+                    "#": "server_links.custom.url"
                 }
             },
             {
