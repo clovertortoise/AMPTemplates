@@ -117,7 +117,7 @@
         "Keywords": "rcon password",
         "FieldName": "rcon_password",
         "ParamFieldName": "networking.rcon.password",
-        "InputType": "password",
+        "InputType": "text",
         "DefaultValue": "@djustThyPa$$!"
     },
     {
