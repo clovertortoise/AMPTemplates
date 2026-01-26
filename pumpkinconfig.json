@@ -1263,11 +1263,14 @@
         "DisplayName": "Custom Link",
         "Category": "Pumpkin Features:extension",
         "Subcategory": "Server Links:link:9",
-        "Description": "The URL for the link. E.g., 'https://discord.gg/pumpkin'",
+        "Description": "The URL for the link. E.g., Discord = 'https://discord.gg/pumpkin' ",
         "Keywords": "custom link url",
         "FieldName": "server_links.custom.url",
-        "InputType": "text",
-        "DefaultValue": "'https://discord.gg/pumpkin'",
+        "InputType": "Textarea",
+        "IsFlagArgument": false,
+        "ParamFieldName": "server_links.custom.url",
+        "DefaultValue": "Discord = 'https://discord.gg/pumpkin'",
+        "EnumValues": {},
         "IncludeInCommandLine": false
     },
     {
