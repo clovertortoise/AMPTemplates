@@ -140,7 +140,7 @@
         "Keywords": "velocity secret",
         "FieldName": "velocity_secret",
         "ParamFieldName": "networking.proxy.velocity.secret",
-        "InputType": "password",
+        "InputType": "text",
         "DefaultValue": ""
     },
     {
