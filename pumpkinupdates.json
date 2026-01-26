@@ -44,7 +44,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/test/configuration.toml",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}/config/",
         "OverwriteExistingFiles": false
     },
         {
@@ -52,7 +52,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/test/features.toml",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}/config/",
         "OverwriteExistingFiles": false
     }
 ]

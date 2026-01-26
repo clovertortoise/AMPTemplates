@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "configuration.toml",
+        "ConfigFile": "config/configuration.toml",
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "ini",
@@ -8,7 +8,7 @@
         "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
     },
     {
-        "ConfigFile": "configuration.toml",
+        "ConfigFile": "config/configuration.toml",
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "ini",
@@ -16,7 +16,7 @@
         "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
     },
     {
-        "ConfigFile": "features.toml",
+        "ConfigFile": "config/features.toml",
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "ini",
@@ -24,7 +24,7 @@
         "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
     },
     {
-        "ConfigFile": "features.toml",
+        "ConfigFile": "config/features.toml",
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "ini",
