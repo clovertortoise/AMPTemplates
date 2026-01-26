@@ -1,237 +1,34 @@
 [
     {
-        "ConfigFile": "config/configuration.toml",
-        "ConfigType": "kvp",
-        "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>.*?)$",
-        "Subsections": [
-            {
-                "Heading": "",
-                "SettingMappings": {
-                    "java_edition": "java_edition",
-                    "java_edition_address": "java_edition_address",
-                    "bedrock_edition": "bedrock_edition",
-                    "bedrock_edition_address": "bedrock_edition_address",
-                    "seed": "seed",
-                    "max_players": "max_players",
-                    "view_distance": "view_distance",
-                    "simulation_distance": "simulation_distance",
-                    "default_difficulty": "default_difficulty",
-                    "op_permission_level": "op_permission_level",
-                    "allow_nether": "allow_nether",
-                    "hardcore": "hardcore",
-                    "online_mode": "online_mode",
-                    "encryption": "encryption",
-                    "motd": "motd",
-                    "tps": "tps",
-                    "default_gamemode": "default_gamemode",
-                    "force_gamemode": "force_gamemode",
-                    "scrub_ips": "scrub_ips",
-                    "use_favicon": "use_favicon",
-                    "favicon_path": "favicon_path",
-                    "default_level_name": "default_level_name",
-                    "allow_chat_reports": "allow_chat_reports",
-                    "white_list": "white_list",
-                    "enforce_whitelist": "enforce_whitelist"
-                }
-            }
-        ]
+        "ConfigFile": "configuration.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = \"{1}\"",
+        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
     },
     {
-        "ConfigFile": "config/features.toml",
+        "ConfigFile": "configuration.toml",
+        "AutoMap": true,
+        "Importable": true,
         "ConfigType": "ini",
         "ConfigFormat": "{0} = {1}",
-        "ConfigFormatRegex": "^\\s*(?<key>.+?)\\s*=\\s*(?<value>.*?)$",
-        "Subsections": [
-            {
-                "Heading": "commands",
-                "SettingMappings": {
-                    "use_console": "use_console",
-                    "use_tty": "use_tty",
-                    "log_console": "log_console",
-                    "default_op_level": "default_op_level"
-                }
-            },
-            {
-                "Heading": "chat",
-                "SettingMappings": {
-                    "format": "chat_format"
-                }
-            },
-            {
-                "Heading": "pvp",
-                "SettingMappings": {
-                    "enabled": "pvp_enabled",
-                    "hurt_animation": "pvp_hurt_animation",
-                    "protect_creative": "pvp_protect_creative",
-                    "knockback": "pvp_knockback",
-                    "swing": "pvp_swing"
-                }
-            },
-            {
-                "Heading": "networking.rcon",
-                "SettingMappings": {
-                    "enabled": "rcon_enabled",
-                    "max_connections": "rcon_max_connections",
-                    "address": "rcon_address",
-                    "password": "rcon_password"
-                }
-            },
-            {
-                "Heading": "networking.rcon.logging",
-                "SettingMappings": {
-                    "logged_successfully": "rcon_log_success",
-                    "wrong_password": "rcon_log_wrong_pass",
-                    "commands": "rcon_log_commands",
-                    "quit": "rcon_log_quit"
-                }
-            },
-            {
-                "Heading": "networking.proxy",
-                "SettingMappings": {
-                    "enabled": "proxy_enabled"
-                }
-            },
-            {
-                "Heading": "networking.proxy.velocity",
-                "SettingMappings": {
-                    "enabled": "velocity_enabled",
-                    "secret": "velocity_secret"
-                }
-            },
-            {
-                "Heading": "networking.proxy.bungeecord",
-                "SettingMappings": {
-                    "enabled": "bungeecord_enabled"
-                }
-            },
-            {
-                "Heading": "networking.authentication",
-                "SettingMappings": {
-                    "enabled": "auth_enabled",
-                    "connect_timeout": "auth_connect_timeout",
-                    "read_timeout": "auth_read_timeout",
-                    "prevent_proxy_connections": "prevent_proxy_connections",
-                    "auth_url": "auth_url",
-                    "prevent_proxy_connection_auth_url": "auth_prevent_proxy_url"
-                }
-            },
-            {
-                "Heading": "networking.authentication.player_profile",
-                "SettingMappings": {
-                    "allow_banned_players": "auth_allow_banned",
-                    "allowed_actions": "auth_allowed_actions"
-                }
-            },
-            {
-                "Heading": "networking.authentication.textures",
-                "SettingMappings": {
-                    "enabled": "texture_filtering_enabled",
-                    "allowed_url_schemes": "auth_allowed_url_schemes",
-                    "allowed_url_domains": "auth_allowed_url_domains"
-                }
-            },
-            {
-                "Heading": "networking.authentication.textures.types",
-                "SettingMappings": {
-                    "skin": "texture_skin",
-                    "cape": "texture_cape",
-                    "elytra": "texture_elytra"
-                }
-            },
-            {
-                "Heading": "networking.packet_compression",
-                "SettingMappings": {
-                    "enabled": "compression_enabled",
-                    "threshold": "compression_threshold",
-                    "level": "compression_level"
-                }
-            },
-            {
-                "Heading": "networking.lan_broadcast",
-                "SettingMappings": {
-                    "enabled": "lan_broadcast_enabled",
-                    "port": "lan_broadcast_port"
-                }
-            },
-            {
-                "Heading": "resource_pack",
-                "SettingMappings": {
-                    "enabled": "resource_pack_enabled",
-                    "force": "resource_pack_force",
-                    "url": "resource_pack_url",
-                    "sha1": "resource_pack_sha1",
-                    "prompt_message": "resource_pack_prompt_message"
-                }
-            },
-            {
-                "Heading": "logging",
-                "SettingMappings": {
-                    "enabled": "logging_enabled",
-                    "env": "logging_env",
-                    "threads": "logging_threads",
-                    "color": "logging_color",
-                    "timestamp": "logging_timestamp",
-                    "file": "logging_file",
-                    "level": "logging_level"
-                }
-            },
-            {
-                "Heading": "world.chunk",
-                "SettingMappings": {
-                    "write_in_place": "world_write_in_place",
-                    "linear_version": "linear_version",
-                    "type": "world_chunk_type"
-                }
-            },
-            {
-                "Heading": "world.chunk.compression",
-                "SettingMappings": {
-                    "level": "world_chunk_compression_level",
-                    "algorithm": "world_chunk_compression_algorithm"
-                }
-            },
-            {
-                "Heading": "player_data",
-                "SettingMappings": {
-                    "save_player_data": "save_player_data",
-                    "save_player_cron_interval": "save_player_cron_interval"
-                }
-            },
-            {
-                "Heading": "networking.query",
-                "SettingMappings": {
-                    "enabled": "query_enabled",
-                    "address": "query_address"
-                }
-            },
-            {
-                "Heading": "server_links",
-                "SettingMappings": {
-                    "enabled": "server_links_enabled",
-                    "bug_report": "link_bug_report",
-                    "support": "link_support",
-                    "status": "link_status",
-                    "feedback": "link_feedback",
-                    "community": "link_community",
-                    "website": "link_website",
-                    "forums": "link_forums",
-                    "news": "link_news",
-                    "announcements": "link_announcements"
-                }
-            },
-            {
-                "Heading": "server_links.custom",
-                "SettingMappings": {
-                    "#": "server_links.custom.url"
-                }
-            },
-            {
-                "Heading": "fun",
-                "SettingMappings": {
-                    "april_fools": "april_fools"
-                }
-            }
-        ]
+        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
+    },
+    {
+        "ConfigFile": "features.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = \"{1}\"",
+        "ConfigFormatRegex": "^(?<key>.+?) = \"(?<value>.*?)\"$"
+    },
+    {
+        "ConfigFile": "features.toml",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "ini",
+        "ConfigFormat": "{0} = {1}",
+        "ConfigFormatRegex": "^(?<key>.+?) = (?<value>[^\"]*?)$"
     }
 ]
