@@ -1269,7 +1269,7 @@
         "InputType": "Textarea",
         "IsFlagArgument": false,
         "ParamFieldName": "server_links.custom.url",
-        "DefaultValue": "Discord = 'https://discord.gg/pumpkin'",
+        "DefaultValue": "\nDiscord = 'https://discord.gg/pumpkin'",
         "EnumValues": {},
         "IncludeInCommandLine": false
     },
