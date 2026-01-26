@@ -1,7 +1,7 @@
 java_edition = true
-java_edition_address = '0.0.0.0:25565
+java_edition_address = '0.0.0.0:25565'
 bedrock_edition = true
-bedrock_edition_address = '0.0.0.0:19132
+bedrock_edition_address = '0.0.0.0:19132'
 seed = ''
 max_players = 1000
 view_distance = 10

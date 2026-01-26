@@ -8,7 +8,7 @@
         "FieldName": "motd",
         "ParamFieldName": "motd",
         "InputType": "text",
-        "DefaultValue": "'A blazingly fast Pumpkin server!'"
+        "DefaultValue": "A blazingly fast Pumpkin server!"
     },
     {
         "DisplayName": "Max Players",
@@ -94,7 +94,7 @@
         "FieldName": "java_edition_address",
         "ParamFieldName": "java_edition_address",
         "InputType": "text",
-        "DefaultValue": "'{{$ApplicationIPBinding}}:{{$ServerPort}}'",
+        "DefaultValue": "{{$ApplicationIPBinding}}:{{$ServerPort}}",
         "Hidden": true
     },
     {
@@ -106,7 +106,7 @@
         "FieldName": "bedrock_edition_address",
         "ParamFieldName": "bedrock_edition_address",
         "InputType": "text",
-        "DefaultValue": "'{{$ApplicationIPBinding}}:{{$BedrockPort}}'",
+        "DefaultValue": "{{$ApplicationIPBinding}}:{{$BedrockPort}}",
         "Hidden": true
     },
     {
@@ -118,7 +118,7 @@
         "FieldName": "rcon_password",
         "ParamFieldName": "networking.rcon.password",
         "InputType": "password",
-        "DefaultValue": "'@djustThyPa$$!'"
+        "DefaultValue": "@djustThyPa$$!"
     },
     {
         "DisplayName": "Enable Velocity",
@@ -141,7 +141,7 @@
         "FieldName": "velocity_secret",
         "ParamFieldName": "networking.proxy.velocity.secret",
         "InputType": "password",
-        "DefaultValue": "''"
+        "DefaultValue": ""
     },
     {
         "DisplayName": "Default Difficulty",
@@ -153,12 +153,12 @@
         "ParamFieldName": "default_difficulty",
         "InputType": "enum",
         "EnumValues": {
-            "'Peaceful'": "Peaceful",
-            "'Easy'": "Easy",
-            "'Normal'": "Normal",
-            "'Hard'": "Hard"
+            "Peaceful": "Peaceful",
+            "Easy": "Easy",
+            "Normal": "Normal",
+            "Hard": "Hard"
         },
-        "DefaultValue": "'Easy'"
+        "DefaultValue": "Easy"
     },
     {
         "DisplayName": "Default Gamemode",
@@ -170,12 +170,12 @@
         "ParamFieldName": "default_gamemode",
         "InputType": "enum",
         "EnumValues": {
-            "'Survival'": "Survival",
-            "'Creative'": "Creative",
-            "'Adventure'": "Adventure",
-            "'Spectator'": "Spectator"
+            "Survival": "Survival",
+            "Creative": "Creative",
+            "Adventure": "Adventure",
+            "Spectator": "Spectator"
         },
-        "DefaultValue": "'Survival'"
+        "DefaultValue": "Survival"
     },
     {
         "DisplayName": "PVP Enabled",
