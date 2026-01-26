@@ -723,7 +723,7 @@
             "'LZ4'": "LZ4",
             "'GZip'": "GZip",
             "'Zlib'": "Zlib",
-            "'Custom'": "Custom'"
+            "'Custom'": "Custom"
         },
         "DefaultValue": "'LZ4'",
         "IncludeInCommandLine": false
@@ -800,7 +800,7 @@
         "DisplayName": "Authentication",
         "Category": "Pumpkin Features:extension",
         "Subcategory": "Authentication:verified_user:2",
-        "Description": "Whether authenthication is enabled or not. Default: on",
+        "Description": "Whether authentication is enabled or not. Default: on",
         "Keywords": "auth enable",
         "FieldName": "auth_enabled",
         "InputType": "checkbox",
@@ -815,7 +815,7 @@
         "DisplayName": "Auth URL",
         "Category": "Pumpkin Features:extension",
         "Subcategory": "Authentication:verified_user:2",
-        "Description": "The URL to authenthicate with. Uses Mojang's session servers to authenthicate if not specified. E.g., 'url'",
+        "Description": "The URL to authenticate with. Uses Mojang's session servers to authenticate if not specified. E.g., 'url'",
         "Keywords": "auth url",
         "FieldName": "auth_url",
         "InputType": "text",
@@ -826,7 +826,7 @@
         "DisplayName": "Auth Prevent Proxy URL",
         "Category": "Pumpkin Features:extension",
         "Subcategory": "Authentication:verified_user:2",
-        "Description": "The URL to authenthicate with if prevent_proxy_connections is enabled. Uses Mojang's session servers to authenthicate if not specified. E.g., 'url'",
+        "Description": "The URL to authenticate with if prevent_proxy_connections is enabled. Uses Mojang's session servers to authenticate if not specified. E.g., 'url'",
         "Keywords": "auth url proxy",
         "FieldName": "auth_prevent_proxy_url",
         "InputType": "text",
