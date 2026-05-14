@@ -43,10 +43,8 @@ force = false
 
 [resource_pack.bedrock]
 enabled = false
-url = ""
-sha1 = ""
-prompt_message = ""
 force = false
+packs = []
 
 [world]
 lighting = "default"
