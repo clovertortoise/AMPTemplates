@@ -30,7 +30,7 @@ enabled = true
 level = "Info"
 env = true
 threads = true
-color = true
+color = false
 timestamp = true
 file = "latest.log"
 
