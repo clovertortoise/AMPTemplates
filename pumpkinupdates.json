@@ -45,7 +45,7 @@
         "UpdateStageName": "Download Config File",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/clovertoroise/AMPTemplates/pumpkin-patch/pumpkin.toml",
+        "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/pumpkin-patch/pumpkin.toml",
         "UpdateSourceTarget": "{{$FullBaseDir}}config",
         "UpdateSourceArgs": "pumpkin.toml",
         "SkipOnFailure": false,
