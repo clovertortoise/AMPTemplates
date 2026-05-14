@@ -46,7 +46,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/clovertortoise/AMPTemplates/pumpkin-patch/pumpkin.toml",
-        "UpdateSourceTarget": "{{$FullBaseDir}}config",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
         "UpdateSourceArgs": "pumpkin.toml",
         "SkipOnFailure": false,
         "OverwriteExistingFiles": false
